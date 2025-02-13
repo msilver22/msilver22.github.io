@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: Driven by a love for mathematics, I am passionate about AI technologies and their evolve the world.
+subtitle: Driven by a love for mathematics, passionate about AI technologies.
 
 profile:
   align: right
@@ -26,8 +26,10 @@ latest_posts:
 
 Hi there! 👋
 
-I’m a first-year PhD student in Computer Science at [Sapienza University of Rome](https://www.uniroma1.it/it/). My research focuses on enhancing privacy in social networks, ensuring a safer and more secure digital world.
+I’m a first-year PhD student in Computer Science at [Sapienza University of Rome](https://www.uniroma1.it/it/).  
+My main research focuses on enhancing privacy in social networks.
 
 I've always been fascinated by science in all its forms. With a solid foundation in mathematics, physics, and computer science, I enjoy understanding how things work at their core. Beyond tech, I have a creative side—I have a decent hand in graphic design, photography, and video editing.
 
-Sports have always played a big role in my life. I had a solid run in basketball, but honestly, I enjoy and can practice almost any sport. Staying active keeps me balanced and sharp.
+Sports have always played a big role in my life. I had a career in basketball, but honestly, I enjoy and can practice almost any sport.
+Mens sana in corpore sana!
