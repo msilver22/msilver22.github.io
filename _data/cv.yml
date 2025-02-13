@@ -3,8 +3,8 @@
   contents:
     - name: Full Name
       value: Matteo Silvestri
-    - name: Date of Birth
-      value: 
+    - name: Place of Birth
+      value: Rome, Italy
     - name: Languages
       value: Italian, English, Spanish
 
@@ -35,8 +35,3 @@
       year: 2021
       description:
         - Mathematics Department.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
