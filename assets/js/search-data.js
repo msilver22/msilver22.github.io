@@ -376,7 +376,7 @@ ninja.data = [{
         
       },
     },{id: "news-starting-a-ph-d-in-computer-science-at-sapienza-university-of-rome",
-          title: 'Starting a Ph.D. in Computer Science at Sapienza University of Rome !',
+          title: 'Starting a Ph.D. in Computer Science at Sapienza University of Rome!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
