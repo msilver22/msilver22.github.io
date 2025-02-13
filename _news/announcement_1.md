@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-11-01 
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Starting a Ph.D. in Computer Science at [Sapienza University of Rome](https://www.uniroma1.it/it/)!
