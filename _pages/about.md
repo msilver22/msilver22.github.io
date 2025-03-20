@@ -26,7 +26,7 @@ latest_posts:
 
 Hi there! 👋
 
-I’m a first-year PhD student in Computer Science at [Sapienza University of Rome](https://www.uniroma1.it/it/).  
+I’m a first-year PhD student at [Sapienza University of Rome](https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx).  
 My main research focuses on enhancing privacy in social networks.
 
 I've always been fascinated by science in all its forms. With a solid foundation in mathematics, physics, and computer science, I enjoy understanding how things work at their core. Beyond tech, I have a creative side—I have a good hand in graphic design, photography, and video editing.
