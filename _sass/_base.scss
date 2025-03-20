@@ -56,6 +56,10 @@ table.table a {
   }
 }
 
+figure, img {
+  max-width: 90vw;
+}
+
 blockquote {
   background: var(--global-bg-color);
   border-left: 5px solid var(--global-theme-color);
@@ -193,6 +197,7 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
+  margin-left: 1rem;
   width: 100%;
 
   .more-info {
