@@ -27,7 +27,7 @@ latest_posts:
 Hi there! 👋
 
 I’m a first-year PhD student at [Sapienza University of Rome](https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx).  
-My main research focuses on enhancing privacy in social networks.
+My main research focuses on enhancing privacy in social networks, and I am part of the [HERCOLE Lab](https://hercolelab.netlify.app/) research laboratory.
 
 I've always been fascinated by science in all its forms. With a solid foundation in mathematics, physics, and computer science, I enjoy understanding how things work at their core. Beyond tech, I have a creative side—I have a good hand in graphic design, photography, and video editing.
 
