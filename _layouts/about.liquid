@@ -5,34 +5,32 @@ layout: default
 <!-- about.liquid -->
 <div class="post">
   <header class="post-header">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 class="post-title">
-          {% if site.title == "blank" -%}
-            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
-          {%- else -%}
-            {{ site.title }}
-          {%- endif %}
-        </h1>
-      </div>
-      <div class="col-md-5 social">
-        <div class="contact-icons text-center navbar-brand" style="font-size:1.7rem !important;">
-          {% include social.liquid %}
-        </div>
-      </div>
-    </div>
+    <h1 class="post-title">
+      {% if site.title == "blank" -%}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+      {%- else -%}
+        {{ site.title }}
+      {%- endif %}
+    </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
   <article>
     {% if page.profile -%}
-      <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+      <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}" style="margin-top: -20px;">
         {%- if page.profile.image %}
           {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-          {% include figure.liquid 
-            path=profile_image_path 
-            class="img-fluid z-depth-1 rounded"
-            alt=page.profile.image -%}
+          {% if page.profile.image_circular %}
+            {% include figure.liquid 
+              path=profile_image_path 
+              class="img-fluid z-depth-1 rounded-circle profile-img-circular"
+              alt=page.profile.image -%}
+          {% else %}
+            {% include figure.liquid 
+              path=profile_image_path 
+              class="img-fluid z-depth-1 rounded"
+              alt=page.profile.image -%}
+          {% endif %}
         {% endif %}
         {%- if page.profile.address %}
         <div>
