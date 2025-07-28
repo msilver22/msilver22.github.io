@@ -219,6 +219,18 @@ ul.task-list input[type="checkbox"] {
     object-fit: cover;
     aspect-ratio: 1;
   }
+
+  // Profile image in header
+  .profile-img-header {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-img-header.profile-img-circular {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .profile.float-right {

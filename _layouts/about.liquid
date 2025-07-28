@@ -17,7 +17,7 @@ layout: default
 
   <article>
     {% if page.profile -%}
-      <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}" style="margin-top: -20px;">
+      <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
         {%- if page.profile.image %}
           {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
           {% if page.profile.image_circular %}
@@ -33,7 +33,7 @@ layout: default
           {% endif %}
         {% endif %}
         {%- if page.profile.address %}
-        <div>
+        <div class="profile-address">
           {{ page.profile.address }}
         </div>
         {%- endif %}
