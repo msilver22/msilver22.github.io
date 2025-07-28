@@ -241,6 +241,34 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+// Mobile responsive styling
+@media (max-width: 575px) {
+  .profile {
+    float: none !important;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    .profile-img-circular {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+    }
+
+    .profile-address {
+      margin-top: 1rem;
+    }
+  }
+
+  .profile.float-right,
+  .profile.float-left {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
