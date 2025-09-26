@@ -24,8 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! 👋
-
 I’m a first-year PhD student at [Sapienza University of Rome](https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx).  
 I a member of the [HERCOLE Lab](https://hercolelab.netlify.app/) research laboratory, where I pursue multiple research directions, including privacy on social networks, counterfactual explanations and graph generation.
 

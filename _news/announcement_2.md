@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The official website of [HERCOLE Lab](https://hercolelab.netlify.app/) is now online! 
-I had the pleasure of developing it, and I'm glad to see it go live.
+The **official website** of [HERCOLE Lab](https://hercolelab.netlify.app/) is now online. Explore our research and updates!
