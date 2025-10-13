@@ -1,10 +1,39 @@
 ---
 ---
 
-
-@misc{silvestri2025communitymembershiphidinggradientbased,
+@misc{giorgi2025enhancingxainarrativesmultinarrative,
       abbr={Preprint},
-      title={Community Membership Hiding via Gradient-based Optimization}, 
+      title={Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation}, 
+      author={Flavio Giorgi and Matteo Silvestri and Cesare Campagnano and Fabrizio Silvestri and Gabriele Tolomei},
+      year={2025},
+      eprint={2510.03134},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.03134}, 
+      abstract="Explainable Artificial Intelligence has become a crucial area of research, aiming to demystify the decision-making processes of deep learning models. Among various explainability techniques, counterfactual explanations have been proven particularly promising, as they offer insights into model behavior by highlighting minimal changes that would alter a prediction. Despite their potential, these explanations are often complex and technical, making them difficult for non-experts to interpret. To address this challenge, we propose a novel pipeline that leverages Language Models, large and small, to compose narratives for counterfactual explanations. We employ knowledge distillation techniques along with a refining mechanism to enable Small Language Models to perform comparably to their larger counterparts while maintaining robust reasoning abilities. In addition, we introduce a simple but effective evaluation method to assess natural language narratives, designed to verify whether the models' responses are in line with the factual, counterfactual ground truth. As a result, our proposed pipeline enhances both the reasoning capabilities and practical performance of student models, making them more suitable for real-world use cases.",
+      pdf={https://arxiv.org/pdf/2510.03134},
+      code={https://github.com/flaat/llm_kd},
+}
+
+
+
+@misc{loi2025evadingoverlappingcommunitydetection,
+      abbr={Preprint},
+      title={Evading Overlapping Community Detection via Proxy Node Injection}, 
+      author={Dario Loi and Matteo Silvestri and Fabrizio Silvestri and Gabriele Tolomei},
+      year={2025},
+      eprint={2509.21211},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI},
+      url={https://arxiv.org/abs/2509.21211}, 
+      abstract = "Protecting privacy in social graphs requires preventing sensitive information, such as community affiliations, from being inferred by graph analysis, without substantially altering the graph topology. We address this through the problem of \emph{community membership hiding} (CMH), which seeks edge modifications that cause a target node to exit its original community, regardless of the detection algorithm employed. Prior work has focused on non-overlapping community detection, where trivial strategies often suffice, but real-world graphs are better modeled by overlapping communities, where such strategies fail. To the best of our knowledge, we are the first to formalize and address CMH in this setting. In this work, we propose a deep reinforcement learning (DRL) approach that learns effective modification policies, including the use of proxy nodes, while preserving graph structure. Experiments on real-world datasets show that our method significantly outperforms existing baselines in both effectiveness and efficiency, offering a principled tool for privacy-preserving graph modification with overlapping communities.",
+      pdf={https://arxiv.org/pdf/2509.21211},
+      code={https://anonymous.4open.science/r/overlapping_comm_detect-EC02/README.md},
+}
+
+@misc{silvestri2025righthidemaskingcommunity,
+      abbr={Preprint},
+      title={The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring}, 
       author={Silvestri,Matteo and 
       Gabrielli,Edoardo and Silvestri,Fabrizio and Tolomei,Gabriele},
       year={2025},
@@ -12,9 +41,9 @@
       archivePrefix={arXiv},
       primaryClass={cs.SI},
       url={https://arxiv.org/abs/2502.00432}, 
-      abstract = "We tackle the problem of community membership hiding, which involves strategically altering a network's structure to obscure a target node's membership in a specific community identified by a detection algorithm. We reformulate the original discrete counterfactual graph objective as a differentiable constrained optimization task. To solve this, we propose $\nabla$-CMH, a gradient-based method that modifies the network's structure within the feasible bounds for an individual target node, effectively concealing its membership. Experimental results across multiple datasets and community detection algorithms show that our approach surpasses existing baselines, offering a better balance between accuracy and computational efficiency.",
+      abstract = "Protecting privacy in social graphs may require obscuring nodes' membership in sensitive communities. However, doing so without significantly disrupting the underlying graph topology remains a key challenge. In this work, we address the community membership hiding problem, which involves strategically modifying the graph structure to conceal a target node's affiliation with a community, regardless of the detection algorithm used. We reformulate the original discrete, counterfactual graph search objective as a differentiable constrained optimisation task. To this end, we introduce ∇-CMH, a new gradient-based method that operates within a feasible modification budget to minimise structural changes while effectively hiding a node's community membership. Extensive experiments on multiple datasets and community detection methods demonstrate that our technique outperforms existing baselines, achieving the best balance between node hiding effectiveness and graph rewiring cost, while preserving computational efficiency.",
       pdf={https://arxiv.org/pdf/2502.00432},
-      code={https://anonymous.4open.science/r/community_membership_hiding-FDA1/},
+      code={https://anonymous.4open.science/r/community-membership-hiding-B188/README.md},
 }
 
 @misc{silvestri2024analysishopfieldmodelassociative,
