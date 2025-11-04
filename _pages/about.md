@@ -24,10 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m a first-year PhD student at [Sapienza University of Rome](https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx).  
-I a member of the [HERCOLE Lab](https://hercolelab.netlify.app/) research laboratory, where I pursue multiple research directions, including privacy on social networks, counterfactual explanations and graph generation.
+I’m a second-year PhD student at [Sapienza University of Rome](https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx).  
+I am a member of the [HERCOLE Lab](https://hercolelab.netlify.app/) research laboratory, where I pursue multiple research directions, including privacy on social networks, narrative counterfactual explanations and graph generation.
 
 I've always been fascinated by science in all its forms. With a solid foundation in mathematics, physics, and computer science, I enjoy understanding how things work at their core. Beyond tech, I have a creative side—I have a good hand in graphic design, photography, and video editing.
 
-Sports have always played a big role in my life. I had a career in basketball, but honestly, I enjoy and can practice almost any sport.
-Mens sana in corpore sana!
+Sports have always played a big role in my life. Mens sana in corpore sana!

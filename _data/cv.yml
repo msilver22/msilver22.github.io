@@ -11,15 +11,23 @@
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. in Computer Science
+      institution: Sapienza University of Rome, Italy
+      year: 2024 - present
+      description:
+        - XL Cycle.
+
     - title: M.Sc. in Applied Mathematics for Data Science
       institution: Sapienza University of Rome, Italy
-      year: 2024
+      year: 2022 - 2024
       description:
+        - Thesis - A Comprehensive Study of Deep Learning Techniques for Data Augmentation.
       
     - title: B.Sc. in Mathematics
       institution: Sapienza University of Rome, Italy
-      year: 2022
+      year: 2018 - 2022
       description:
+         - Thesis - Dido's Relative Isoperimetric Problem.
 
 - title: Experience
   type: time_table
