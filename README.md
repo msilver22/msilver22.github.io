@@ -1,5 +1,10 @@
 # al-folio
 
+# Local deploy
+
+Open the repo in the container, and run `bundle exec jekyll serve`
+
+
 <div align="center">
 
 [![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
@@ -222,6 +227,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
 ## Table Of Contents
 
 - [al-folio](#al-folio)
+- [Local deploy](#local-deploy)
   - [User community](#user-community)
   - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
     - [Desktop](#desktop)

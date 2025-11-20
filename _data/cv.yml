@@ -43,3 +43,12 @@
       year: 2021
       description:
         - Mathematics Department.
+
+- title: Awards
+  type: time_table
+  contents:
+    - title: Best paper award at the HCAI Workshop - ACM CIKM 
+      institution: Human-Centric AI Workshop, XAIC
+      year: 2025
+      description:
+        - Awarded for the paper "Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation".
