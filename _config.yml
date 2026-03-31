@@ -148,8 +148,10 @@ collections:
     output: true
     permalink: /:collection/:title/
   projects:
-    output: true
+    output: false
     permalink: /:collection/:title/
+  posts:
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -185,6 +187,8 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
+  - _posts/
+  - _projects/
   - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
