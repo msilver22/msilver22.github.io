@@ -1,6 +1,34 @@
 ---
 ---
 
+@article{silvestri2025evaluating,
+  abbr={Preprint},
+  title={Evaluating Latent Knowledge of Public Tabular Datasets in Large Language Models},
+  author={Silvestri, Matteo and Veglianti, Fabio, and Giorgi, Flavio and Silvestri, Fabrizio and Tolomei, Gabriele},
+  year={2026},
+  month={Mar},
+  eprint={2510.20351},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2510.20351}, 
+  abstract="Large language models (LLMs) are increasingly exposed to data contamination, i.e., performance gains driven by prior exposure of test datasets rather than generalization. However, in the context of tabular data, this problem is largely unexplored. Existing approaches primarily rely on memorization tests, which are too coarse to detect contamination. In contrast, we propose a framework for assessing contamination in tabular datasets by generating controlled queries and performing comparative evaluation. Given a dataset, we craft multiple-choice aligned queries that preserve task structure while allowing systematic transformations of the underlying data. These transformations are designed to selectively disrupt dataset information while preserving partial knowledge, enabling us to isolate performance attributable to contamination. We complement this setup with non-neural baselines that provide reference performance, and we introduce a statistical testing procedure to formally detect significant deviations indicative of contamination. Empirical results on eight widely used tabular datasets reveal clear evidence of contamination in four cases. These findings suggest that performance on downstream tasks involving such datasets may be substantially inflated, raising concerns about the reliability of current evaluation practices.",
+  pdf={https://arxiv.org/pdf/2510.20351},
+}
+
+@article{vineis2026ponte,
+  abbr={XAI '26},
+  title={PONTE: Personalized Orchestration for Natural Language Trustworthy Explanations},
+  author={Vineis, Vittoria and Silvestri, Matteo and Antonelli, Lorenzo and Betello, Filippo and Tolomei, Gabriele},
+  year={2026},
+  month={Mar},
+  eprint={2603.06485},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2603.06485}, 
+  abstract="Explainable Artificial Intelligence (XAI) seeks to enhance the transparency and accountability of machine learning systems, yet most methods follow a one-size-fits-all paradigm that neglects user differences in expertise, goals, and cognitive needs. Although Large Language Models can translate technical explanations into natural language, they introduce challenges related to faithfulness and hallucinations. To address these challenges, we present PONTE (Personalized Orchestration for Natural language Trustworthy Explanations), a human-in-the-loop framework for adaptive and reliable XAI narratives. PONTE models personalization as a closed-loop validation and adaptation process rather than prompt engineering. It combines: (i) a low-dimensional preference model capturing stylistic requirements; (ii) a preference-conditioned generator grounded in structured XAI artifacts; and (iii) verification modules enforcing numerical faithfulness, informational completeness, and stylistic alignment, optionally supported by retrieval-grounded argumentation. User feedback iteratively updates the preference state, enabling quick personalization. Automatic and human evaluations across healthcare and finance domains show that the verification–refinement loop substantially improves completeness and stylistic alignment over validation-free generation. Human studies further confirm strong agreement between intended preference vectors and perceived style, robustness to generation stochasticity, and consistently positive quality assessments.",
+  pdf={https://arxiv.org/pdf/2603.06485},
+}
+  
 @article{silvestri2025survey,
   abbr={Preprint},
   title={A Survey on Explainable AI Narratives based on Large Language Models},
@@ -37,6 +65,21 @@ pdf={https://doi.org/10.1007/s10120-025-01679-7},
 url={https://doi.org/10.1007/s10120-025-01679-7}
 }
 
+@misc{giorgi2025enhancingxainarrativesmultinarrative,
+      abbr={HCAI | CIKM '25},
+      title={Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation}, 
+      author={Flavio Giorgi and Matteo Silvestri and Cesare Campagnano and Fabrizio Silvestri and Gabriele Tolomei},
+      year={2025},
+      month={Sep},
+      eprint={2510.03134},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.03134}, 
+      abstract="Explainable Artificial Intelligence has become a crucial area of research, aiming to demystify the decision-making processes of deep learning models. Among various explainability techniques, counterfactual explanations have been proven particularly promising, as they offer insights into model behavior by highlighting minimal changes that would alter a prediction. Despite their potential, these explanations are often complex and technical, making them difficult for non-experts to interpret. To address this challenge, we propose a novel pipeline that leverages Language Models, large and small, to compose narratives for counterfactual explanations. We employ knowledge distillation techniques along with a refining mechanism to enable Small Language Models to perform comparably to their larger counterparts while maintaining robust reasoning abilities. In addition, we introduce a simple but effective evaluation method to assess natural language narratives, designed to verify whether the models' responses are in line with the factual, counterfactual ground truth. As a result, our proposed pipeline enhances both the reasoning capabilities and practical performance of student models, making them more suitable for real-world use cases.",
+      pdf={https://arxiv.org/pdf/2510.03134},
+      code={https://github.com/flaat/llm_kd},
+}
+
 @misc{loi2025evadingoverlappingcommunitydetection,
       abbr={Preprint},
       title={Evading Overlapping Community Detection via Proxy Node Injection}, 
@@ -52,20 +95,7 @@ url={https://doi.org/10.1007/s10120-025-01679-7}
       code={https://anonymous.4open.science/r/overlapping_comm_detect-EC02/README.md},
 }
 
-@misc{giorgi2025enhancingxainarrativesmultinarrative,
-      abbr={Preprint},
-      title={Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation}, 
-      author={Flavio Giorgi and Matteo Silvestri and Cesare Campagnano and Fabrizio Silvestri and Gabriele Tolomei},
-      year={2025},
-      month={Sep},
-      eprint={2510.03134},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2510.03134}, 
-      abstract="Explainable Artificial Intelligence has become a crucial area of research, aiming to demystify the decision-making processes of deep learning models. Among various explainability techniques, counterfactual explanations have been proven particularly promising, as they offer insights into model behavior by highlighting minimal changes that would alter a prediction. Despite their potential, these explanations are often complex and technical, making them difficult for non-experts to interpret. To address this challenge, we propose a novel pipeline that leverages Language Models, large and small, to compose narratives for counterfactual explanations. We employ knowledge distillation techniques along with a refining mechanism to enable Small Language Models to perform comparably to their larger counterparts while maintaining robust reasoning abilities. In addition, we introduce a simple but effective evaluation method to assess natural language narratives, designed to verify whether the models' responses are in line with the factual, counterfactual ground truth. As a result, our proposed pipeline enhances both the reasoning capabilities and practical performance of student models, making them more suitable for real-world use cases.",
-      pdf={https://arxiv.org/pdf/2510.03134},
-      code={https://github.com/flaat/llm_kd},
-}
+
 
 @misc{silvestri2025righthidemaskingcommunity,
       abbr={Preprint},
@@ -82,22 +112,6 @@ url={https://doi.org/10.1007/s10120-025-01679-7}
       pdf={https://arxiv.org/pdf/2502.00432},
       code={https://anonymous.4open.science/r/community-membership-hiding-B188/README.md},
 }
-
-@misc{silvestri2024analysishopfieldmodelassociative,
-      abbr={Preprint},
-      title={Analysis of Hopfield Model as Associative Memory}, 
-      author={Silvestri,Matteo},
-      year={2024},
-      month={Feb},
-      eprint={2402.04264},
-      archivePrefix={arXiv},
-      primaryClass={cond-mat.dis-nn},
-      url={https://arxiv.org/abs/2402.04264}, 
-      abstract="This article delves into the Hopfield neural network model, drawing inspiration from biological neural systems. The exploration begins with an overview of the model's foundations, incorporating insights from mechanical statistics to deepen our understanding. Focusing on audio retrieval, the study demonstrates the Hopfield model's associative memory capabilities. Through practical implementation, the network is trained to retrieve different patterns.",
-      pdf={https://arxiv.org/pdf/2402.04264},
-      code={https://github.com/msilver22/Hopfield_model/},
-}
-
 
 
 
