@@ -19,8 +19,6 @@ announcements:
 ---
 
 I’m a second-year PhD student at [Sapienza University of Rome](https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx).  
-I am a member of the [HERCOLE Lab](https://hercolelab.netlify.app/) research laboratory, where I pursue multiple research directions, including privacy on social networks, narrative counterfactual explanations and graph generation.
+I am a member of the [HERCOLE Lab](https://hercolelab.netlify.app/) research laboratory, and I am currently a research trainee at the European Molecular Biology Laboratory ([EMBL](https://www.embl.org/groups/petroni/)).
 
-I've always been fascinated by science in all its forms. With a solid foundation in mathematics, physics, and computer science, I enjoy understanding how things work at their core. Beyond tech, I have a creative side—I have a good hand in graphic design, photography, and video editing.
-
-Sports have always played a big role in my life. Mens sana in corpore sana!
+My research focuses on using large language models to solve useful downstream tasks efficiently. For instance, I work on XAI Narratives, where LLMs are used to turn technical explainability outputs into human-friendly explanations while preserving faithfulness to the underlying model behavior. More broadly, I am interested in AI agents, especially in how they can leverage context to become more efficient, autonomous, and reliable.
