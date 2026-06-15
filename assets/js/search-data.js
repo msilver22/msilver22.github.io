@@ -47,6 +47,9 @@ ninja.data = [{
           section: "News",},{id: "news-a-new-milestone-our-latest-work-ponte-personalized-orchestration-for-natural-language-trustworthy-explanations-has-been-accepted-at-the-4th-xai-world-conference-brasil-we-re-coming",
           title: 'A new milestone! Our latest work PONTE: Personalized Orchestration for Natural Language Trustworthy...',
           description: "",
+          section: "News",},{id: "news-i-started-a-research-traineeship-at-the-european-molecular-biology-laboratory-focusing-on-ai-agents-for-scientific-discovery",
+          title: 'I started a Research Traineeship at the European Molecular Biology Laboratory, focusing on...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
