@@ -2,8 +2,8 @@
 ---
 
 @article{silvestri2025evaluating,
-  abbr={Preprint},
-  title={Evaluating Latent Knowledge of Public Tabular Datasets in Large Language Models},
+  abbr={COLM '26},
+  title={When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets},
   author={Silvestri, Matteo and Veglianti, Fabio, and Giorgi, Flavio and Silvestri, Fabrizio and Tolomei, Gabriele},
   year={2026},
   month={Mar},
@@ -11,6 +11,7 @@
   archivePrefix={arXiv},
   primaryClass={cs.LG},
   url={https://arxiv.org/abs/2510.20351}, 
+  code={https://github.com/hercolelab/tabular_contamination},
   abstract="Large language models (LLMs) are increasingly exposed to data contamination, i.e., performance gains driven by prior exposure of test datasets rather than generalization. However, in the context of tabular data, this problem is largely unexplored. Existing approaches primarily rely on memorization tests, which are too coarse to detect contamination. In contrast, we propose a framework for assessing contamination in tabular datasets by generating controlled queries and performing comparative evaluation. Given a dataset, we craft multiple-choice aligned queries that preserve task structure while allowing systematic transformations of the underlying data. These transformations are designed to selectively disrupt dataset information while preserving partial knowledge, enabling us to isolate performance attributable to contamination. We complement this setup with non-neural baselines that provide reference performance, and we introduce a statistical testing procedure to formally detect significant deviations indicative of contamination. Empirical results on eight widely used tabular datasets reveal clear evidence of contamination in four cases. These findings suggest that performance on downstream tasks involving such datasets may be substantially inflated, raising concerns about the reliability of current evaluation practices.",
   pdf={https://arxiv.org/pdf/2510.20351},
 }
@@ -112,6 +113,5 @@ url={https://doi.org/10.1007/s10120-025-01679-7}
       pdf={https://arxiv.org/pdf/2502.00432},
       code={https://anonymous.4open.science/r/community-membership-hiding-B188/README.md},
 }
-
 
 

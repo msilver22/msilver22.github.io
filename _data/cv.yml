@@ -8,6 +8,15 @@
     - name: Languages
       value: Italian, English, Spanish
 
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Traineeship
+      institution: European Molecular Biology Laboratory (EMBL), Rome, Italy — Petroni Group
+      year: 2026 - present
+      description:
+        - Working on AI agents for accelerating scientific discovery.
+
 - title: Education
   type: time_table
   contents:
@@ -22,6 +31,12 @@
       year: 2022 - 2024
       description:
         - Thesis - A Comprehensive Study of Deep Learning Techniques for Data Augmentation.
+
+    - title: Erasmus+ Scholarship
+      institution: Universitè Libre de Bruxelles, Belgium
+      year: 2024
+      description:
+        - Specialized Master in Data Science, Big Data.
       
     - title: B.Sc. in Mathematics
       institution: Sapienza University of Rome, Italy
@@ -29,15 +44,6 @@
       description:
          - Thesis - Dido's Relative Isoperimetric Problem.
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Erasmus+ Scholarship
-      institution: Universitè Libre de Bruxelles, Belgium
-      year: 2024
-      description:
-        - Specialized Master in Data Science, Big Data.
-        
     - title: Erasmus+ Scholarship
       institution: Universidad Autonoma de Madrid, Spain
       year: 2021
