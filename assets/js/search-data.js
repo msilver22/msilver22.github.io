@@ -50,6 +50,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-started-a-research-traineeship-at-the-european-molecular-biology-laboratory-focusing-on-ai-agents-for-scientific-discovery",
           title: 'I started a Research Traineeship at the European Molecular Biology Laboratory, focusing on...',
           description: "",
+          section: "News",},{id: "news-happy-to-share-that-our-paper-when-large-language-models-know-the-table-a-framework-for-assessing-data-contamination-in-tabular-datasets-has-been-accepted-at-colm-2026",
+          title: 'Happy to share that our paper When Large Language Models Know the Table:...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
