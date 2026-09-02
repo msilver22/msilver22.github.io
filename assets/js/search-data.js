@@ -53,6 +53,9 @@ ninja.data = [{
           section: "News",},{id: "news-happy-to-share-that-our-paper-when-large-language-models-know-the-table-a-framework-for-assessing-data-contamination-in-tabular-datasets-has-been-accepted-at-colm-2026",
           title: 'Happy to share that our paper When Large Language Models Know the Table:...',
           description: "",
+          section: "News",},{id: "news-small-models-small-footprint-no-loss-in-explanation-quality-that-s-the-claim-of-our-latest-work-small-language-models-as-resource-aware-counterfactual-narrators-knowledge-distillation-and-self-refinement-for-green-local-xai-which-we-ll-bring-to-the-green-ai-workshop-at-ecml-pkdd-2026-in-naples",
+          title: 'Small models, small footprint, no loss in explanation quality. That’s the claim of...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
