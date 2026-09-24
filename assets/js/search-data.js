@@ -56,6 +56,9 @@ ninja.data = [{
           section: "News",},{id: "news-small-models-small-compute-footprint-no-loss-in-explanation-quality-that-s-the-claim-of-our-latest-work-small-language-models-as-resource-aware-counterfactual-narrators-knowledge-distillation-and-self-refinement-for-green-local-xai-which-we-ll-bring-to-the-green-ai-workshop-at-ecml-pkdd-2026-in-naples",
           title: 'Small models, small compute footprint, no loss in explanation quality. That’s the claim...',
           description: "",
+          section: "News",},{id: "news-a-long-chapter-closes-my-first-work-as-a-phd-student-the-right-to-hide-masking-community-affiliation-via-minimal-graph-rewiring-is-now-published-in-online-social-networks-and-media-elsevier",
+          title: 'A long chapter closes: my first work as a PhD student, The Right...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
