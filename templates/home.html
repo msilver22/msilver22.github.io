@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero enter">
+  <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Notes from a curious mind</p>
+  <h1>Mathematics at heart.<br><span class="muted-heading">AI in practice.</span></h1>
+  <p class="hero-subtitle">Driven by a love for mathematics,<br>passionate about AI technologies.</p>
+  <div class="bio">{{ bio }}</div>
+  <a class="text-link" href="/publications/">Explore my research <span aria-hidden="true">↗</span></a>
+</section>
+<section class="research-section reveal" aria-labelledby="research-title">
+  <div class="section-heading"><h2 id="research-title">A few threads I follow</h2><span class="eyebrow">Research interests</span></div>
+  <div class="research-threads">{% for thread in site.research %}<article class="thread"><span class="thread-number">{{ thread.number }}</span><h3>{{ thread.title }}</h3><p>{{ thread.text }}</p></article>{% endfor %}</div>
+</section>
+<section class="news-section reveal" aria-labelledby="news-title">
+  <div class="section-heading"><h2 id="news-title">Lately<span class="accent">.</span></h2><a class="text-link" href="/news/">All news ↗</a></div>
+  {% with entries=news[:site.news_limit] %}{% include 'news-list.html' %}{% endwith %}
+</section>
+<section class="closing-note reveal"><p class="eyebrow">Let’s connect</p><h2>Good research starts<br>with a conversation.</h2><a class="text-link" href="mailto:{{ email }}">{{ email }} ↗</a></section>
+{% endblock %}

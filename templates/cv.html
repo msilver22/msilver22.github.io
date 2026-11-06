@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<header class="page-heading enter"><p class="eyebrow">The path so far</p><h1>Curriculum vitae<span class="accent">.</span></h1><p>From mathematics to machine learning, with a few stops along the way.</p><a class="button-link" href="/assets/pdf/cv.pdf">Download PDF <span aria-hidden="true">↓</span></a></header>
+<nav class="cv-nav" aria-label="CV sections">{% for section in cv %}<a href="#{{ section.title|lower|replace(' ', '-') }}">{{ section.title }}</a>{% endfor %}</nav>
+{% for section in cv %}<section class="cv-section reveal" id="{{ section.title|lower|replace(' ', '-') }}"><h2>{{ section.title }}</h2>{% if section.type == 'map' %}<dl class="cv-info">{% for entry in section.contents %}<div><dt>{{ entry.name }}</dt><dd>{{ entry.value }}</dd></div>{% endfor %}</dl>{% else %}<div class="timeline">{% for entry in section.contents %}<article class="timeline-entry"><p class="timeline-date">{{ entry.year }}</p><div><h3>{{ entry.title }}</h3>{% if entry.get('institution') %}<p class="institution">{{ entry.institution }}</p>{% endif %}{% if entry.get('description') %}<ul>{% for detail in entry.description %}<li>{{ detail|markdown }}</li>{% endfor %}</ul>{% endif %}</div></article>{% endfor %}</div>{% endif %}</section>{% endfor %}
+{% endblock %}

@@ -1,0 +1,2 @@
+{% extends 'base.html' %}
+{% block content %}<article class="page-heading enter"><a class="text-link" href="/news/">← All news</a><p class="eyebrow"><time datetime="{{ item.date.isoformat() }}">{{ item.date.strftime('%d %B %Y') }}</time></p><h1>A research update<span class="accent">.</span></h1><div class="bio">{{ item.html }}</div></article>{% endblock %}

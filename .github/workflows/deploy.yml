@@ -1,42 +1,46 @@
-name: Deploy site
-
-# Builds the Jekyll site and publishes _site to the gh-pages branch.
-# Runs on every push to main (and can be triggered manually).
+name: Build and deploy website
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-      - name: Setup Ruby 💎
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
-      - name: Install and Build 🔧
-        run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
-      - name: Deploy 🚀
+          python-version: '3.12'
+          cache: pip
+      - name: Install build dependencies
+        run: pip install -r requirements.txt
+      - name: Build static website
+        run: python scripts/build.py
+      - name: Verify content and internal links
+        run: python -m unittest discover -s tests -v
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: dist
+          include-hidden-files: true
+      - name: Publish to existing GitHub Pages branch
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _site
+          folder: dist
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title != 'Home' %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta property="og:title" content="{{ site.name }} · {{ title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.portrait }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ path }}">
+  <link rel="canonical" href="{{ site.url }}{{ path }}">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} — News" href="/feed.xml">
+  <script src="/assets/js/theme.js"></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script defer src="/assets/js/site.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="header">
+    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms<span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      {% for label, url in [('About', '/'), ('Publications', '/publications/'), ('CV', '/cv/'), ('News', '/news/')] %}
+      <a href="{{ url }}" {% if path == url %}aria-current="page"{% endif %}>{{ label }}</a>
+      {% endfor %}
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" hidden><span class="theme-icon" aria-hidden="true">◐</span></button>
+  </header>
+  <div class="site-grid">
+    <aside class="identity" aria-label="About Matteo">
+      <button class="portrait-button" type="button" aria-label="Enlarge portrait of Matteo Silvestri" data-portrait>
+        <img class="portrait" src="{{ site.portrait }}" alt="Matteo Silvestri" width="160" height="192" fetchpriority="high">
+        <span class="portrait-caption">A little more human ↗</span>
+      </button>
+      <a class="identity-name" href="/">Matteo<br> Silvestri<span class="accent">.</span></a>
+      <p class="identity-role">{{ site.role }}</p>
+      <p class="identity-affiliations"><a href="https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx">Sapienza University of Rome ↗</a><br><a href="https://www.embl.org/groups/petroni/">EMBL · Petroni Group ↗</a></p>
+      <p class="location"><span aria-hidden="true">↳</span> {{ site.location }}</p>
+      <div class="social-links" aria-label="Contact and profiles">
+        {% for link in social_links %}<a href="{{ link.url }}">{% if link.get('logo') %}<img class="lab-logo" src="{{ link.logo }}" alt="" width="15" height="15">{% endif %}{{ link.label }} <span aria-hidden="true">↗</span></a>{% endfor %}
+      </div>
+      <a class="identity-cv" href="/assets/pdf/cv.pdf">Download CV <span aria-hidden="true">↓</span></a>
+    </aside>
+    <main id="main" tabindex="-1">{% block content %}{% endblock %}</main>
+  </div>
+  <footer class="footer"><span>© {{ year }} {{ site.name }}</span><span>Made with curiosity, in Rome.</span><a href="/feed.xml">RSS ↗</a><a href="#top">Back to top ↑</a></footer>
+  <dialog class="portrait-dialog" aria-label="Portrait of Matteo Silvestri"><button type="button" data-close-portrait aria-label="Close portrait">Close ×</button><img src="{{ site.portrait }}" alt="Matteo Silvestri" width="640" height="768"></dialog>
+</body>
+</html>
