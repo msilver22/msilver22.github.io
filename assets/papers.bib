@@ -1,0 +1,118 @@
+@article{silvestri2025evaluating,
+  abbr={COLM '26},
+  title={When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets},
+  author={Silvestri, Matteo and Veglianti, Fabio, and Giorgi, Flavio and Silvestri, Fabrizio and Tolomei, Gabriele},
+  year={2026},
+  month={Mar},
+  eprint={2510.20351},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2510.20351}, 
+  code={https://github.com/hercolelab/tabular_contamination},
+  abstract="Large language models (LLMs) are increasingly exposed to data contamination, i.e., performance gains driven by prior exposure of test datasets rather than generalization. However, in the context of tabular data, this problem is largely unexplored. Existing approaches primarily rely on memorization tests, which are too coarse to detect contamination. In contrast, we propose a framework for assessing contamination in tabular datasets by generating controlled queries and performing comparative evaluation. Given a dataset, we craft multiple-choice aligned queries that preserve task structure while allowing systematic transformations of the underlying data. These transformations are designed to selectively disrupt dataset information while preserving partial knowledge, enabling us to isolate performance attributable to contamination. We complement this setup with non-neural baselines that provide reference performance, and we introduce a statistical testing procedure to formally detect significant deviations indicative of contamination. Empirical results on eight widely used tabular datasets reveal clear evidence of contamination in four cases. These findings suggest that performance on downstream tasks involving such datasets may be substantially inflated, raising concerns about the reliability of current evaluation practices.",
+  pdf={https://arxiv.org/pdf/2510.20351},
+}
+
+@article{vineis2026ponte,
+  abbr={XAI '26},
+  title={PONTE: Personalized Orchestration for Natural Language Trustworthy Explanations},
+  author={Vineis, Vittoria and Silvestri, Matteo and Antonelli, Lorenzo and Betello, Filippo and Tolomei, Gabriele},
+  year={2026},
+  month={Mar},
+  eprint={2603.06485},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2603.06485}, 
+  abstract="Explainable Artificial Intelligence (XAI) seeks to enhance the transparency and accountability of machine learning systems, yet most methods follow a one-size-fits-all paradigm that neglects user differences in expertise, goals, and cognitive needs. Although Large Language Models can translate technical explanations into natural language, they introduce challenges related to faithfulness and hallucinations. To address these challenges, we present PONTE (Personalized Orchestration for Natural language Trustworthy Explanations), a human-in-the-loop framework for adaptive and reliable XAI narratives. PONTE models personalization as a closed-loop validation and adaptation process rather than prompt engineering. It combines: (i) a low-dimensional preference model capturing stylistic requirements; (ii) a preference-conditioned generator grounded in structured XAI artifacts; and (iii) verification modules enforcing numerical faithfulness, informational completeness, and stylistic alignment, optionally supported by retrieval-grounded argumentation. User feedback iteratively updates the preference state, enabling quick personalization. Automatic and human evaluations across healthcare and finance domains show that the verification–refinement loop substantially improves completeness and stylistic alignment over validation-free generation. Human studies further confirm strong agreement between intended preference vectors and perceived style, robustness to generation stochasticity, and consistently positive quality assessments.",
+  pdf={https://arxiv.org/pdf/2603.06485},
+}
+  
+@article{silvestri2025survey,
+  abbr={Preprint},
+  title={A Survey on Explainable AI Narratives based on Large Language Models},
+  author={Silvestri, Matteo and Vineis, Vittoria and Gabrielli, Edoardo and Giorgi, Flavio and Veglianti, Fabiano and Silvestri, Fabrizio and Tolomei, Gabriele},
+  journal={Authorea Preprints},
+  publisher={Authorea},
+  year={2025},
+  month={Nov},
+  abstract={Explainable Artificial Intelligence (XAI) seeks to elucidate the inner logic of machine learning models, yet its outputs often remain difficult for non-technical users to understand. The emerging paradigm of XAI Narratives leverages Large Language Models (LLMs) to translate technical explanations into coherent, human-readable accounts. This survey provides the first systematic review of this approach, focusing on systems in which LLMs act as post-hoc narrative translators rather than autonomous explainers. We formalize this task as the Narrative Generation Problem, examine its integration with classical XAI methods such as feature attribution and counterfactual explanations across multiple data modalities, and introduce a taxonomy for narrative evaluation spanning three core dimensions. Finally, we analyze prompting strategies and outline open challenges and future directions for advancing reliable, interpretable, and context-aware XAI Narratives.},
+  url={https://www.techrxiv.org/users/995230/articles/1356253-a-survey-on-explainable-ai-narratives-based-on-large-language-models},
+  pdf={https://www.techrxiv.org/users/995230/articles/1356253-a-survey-on-explainable-ai-narratives-based-on-large-language-models},
+
+}
+
+@Article{Dilaghi2025,
+abbr={Springer Nature},
+author={Dilaghi, Emanuele
+and Cesaroni, Edoardo
+and Ligato, Irene
+and Silvestri, Matteo
+and Liuzzi, Giampaolo
+and Annibale, Bruno
+and Lucidi, Stefano
+and Esposito, Gianluca
+and Sciandrone, Marco},
+title={Exploring the potential of artificial intelligence in assessing the risk of gastric neoplastic lesions in patients with corpus atrophic gastritis},
+journal={Gastric Cancer},
+year={2025},
+month={Oct},
+day={22},
+abstract={Corpus atrophic gastritis (CAG) requires endoscopic-histological surveillance due to the risk of developing gastric neoplastic lesions (GNL). This study aimed to identify variables associated with GNL development at long-term follow-up using a Fisher score-based feature-ranking-approach coupled with a One-Class Support-Vector-Machine (SVM) model.},
+issn={1436-3305},
+pdf={https://doi.org/10.1007/s10120-025-01679-7},
+url={https://doi.org/10.1007/s10120-025-01679-7}
+}
+
+@misc{giorgi2025enhancingxainarrativesmultinarrative,
+      abbr={HCAI | CIKM '25},
+      title={Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation}, 
+      author={Flavio Giorgi and Matteo Silvestri and Cesare Campagnano and Fabrizio Silvestri and Gabriele Tolomei},
+      year={2025},
+      month={Sep},
+      eprint={2510.03134},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.03134}, 
+      abstract="Explainable Artificial Intelligence has become a crucial area of research, aiming to demystify the decision-making processes of deep learning models. Among various explainability techniques, counterfactual explanations have been proven particularly promising, as they offer insights into model behavior by highlighting minimal changes that would alter a prediction. Despite their potential, these explanations are often complex and technical, making them difficult for non-experts to interpret. To address this challenge, we propose a novel pipeline that leverages Language Models, large and small, to compose narratives for counterfactual explanations. We employ knowledge distillation techniques along with a refining mechanism to enable Small Language Models to perform comparably to their larger counterparts while maintaining robust reasoning abilities. In addition, we introduce a simple but effective evaluation method to assess natural language narratives, designed to verify whether the models' responses are in line with the factual, counterfactual ground truth. As a result, our proposed pipeline enhances both the reasoning capabilities and practical performance of student models, making them more suitable for real-world use cases.",
+      pdf={https://arxiv.org/pdf/2510.03134},
+      code={https://github.com/flaat/llm_kd},
+}
+
+@misc{loi2025evadingoverlappingcommunitydetection,
+      abbr={Preprint},
+      title={Evading Overlapping Community Detection via Proxy Node Injection}, 
+      author={Dario Loi and Matteo Silvestri and Fabrizio Silvestri and Gabriele Tolomei},
+      year={2025},
+      month={Sep},
+      eprint={2509.21211},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI},
+      url={https://arxiv.org/abs/2509.21211}, 
+      abstract = "Protecting privacy in social graphs requires preventing sensitive information, such as community affiliations, from being inferred by graph analysis, without substantially altering the graph topology. We address this through the problem of \emph{community membership hiding} (CMH), which seeks edge modifications that cause a target node to exit its original community, regardless of the detection algorithm employed. Prior work has focused on non-overlapping community detection, where trivial strategies often suffice, but real-world graphs are better modeled by overlapping communities, where such strategies fail. To the best of our knowledge, we are the first to formalize and address CMH in this setting. In this work, we propose a deep reinforcement learning (DRL) approach that learns effective modification policies, including the use of proxy nodes, while preserving graph structure. Experiments on real-world datasets show that our method significantly outperforms existing baselines in both effectiveness and efficiency, offering a principled tool for privacy-preserving graph modification with overlapping communities.",
+      pdf={https://arxiv.org/pdf/2509.21211},
+      code={https://anonymous.4open.science/r/overlapping_comm_detect-EC02/README.md},
+}
+
+
+
+@article{silvestri2026righthidemaskingcommunity,
+      abbr={OSNEM},
+      title={The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring}, 
+      author={Silvestri, Matteo and Gabrielli, Edoardo and Silvestri, Fabrizio and Tolomei, Gabriele},
+      journal={Online Social Networks and Media},
+      publisher={Elsevier},
+      volume={55},
+      pages={100357},
+      year={2026},
+      month={Sep},
+      doi={10.1016/j.osnem.2026.100357},
+      eprint={2502.00432},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI},
+      url={https://www.sciencedirect.com/science/article/pii/S2468696426000133},
+      abstract = "Protecting privacy in social graphs may require obscuring nodes' membership in sensitive communities. However, doing so without significantly disrupting the underlying graph topology remains a key challenge. In this work, we address the community membership hiding problem, which involves strategically modifying the graph structure to conceal a target node's affiliation with a community, regardless of the detection algorithm used. We reformulate the original discrete, counterfactual graph search objective as a differentiable constrained optimisation task. To this end, we introduce ∇-CMH, a new gradient-based method that operates within a feasible modification budget to minimise structural changes while effectively hiding a node's community membership. Extensive experiments on multiple datasets and community detection methods demonstrate that our technique outperforms existing baselines, achieving the best balance between node hiding effectiveness and graph rewiring cost, while preserving computational efficiency.",
+      pdf={https://www.sciencedirect.com/science/article/pii/S2468696426000133},
+      code={https://github.com/hercolelab/community-membership-hiding},
+}
+
+
