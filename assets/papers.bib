@@ -1,7 +1,7 @@
 @article{silvestri2025evaluating,
   abbr={COLM '26},
   title={When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets},
-  author={Silvestri, Matteo and Veglianti, Fabio, and Giorgi, Flavio and Silvestri, Fabrizio and Tolomei, Gabriele},
+  author={Silvestri, Matteo and Veglianti, Fabiano and Giorgi, Flavio and Silvestri, Fabrizio and Tolomei, Gabriele},
   year={2026},
   month={Mar},
   eprint={2510.20351},
@@ -31,8 +31,7 @@
   abbr={Preprint},
   title={A Survey on Explainable AI Narratives based on Large Language Models},
   author={Silvestri, Matteo and Vineis, Vittoria and Gabrielli, Edoardo and Giorgi, Flavio and Veglianti, Fabiano and Silvestri, Fabrizio and Tolomei, Gabriele},
-  journal={Authorea Preprints},
-  publisher={Authorea},
+  journal={TechRxiv},
   year={2025},
   month={Nov},
   abstract={Explainable Artificial Intelligence (XAI) seeks to elucidate the inner logic of machine learning models, yet its outputs often remain difficult for non-technical users to understand. The emerging paradigm of XAI Narratives leverages Large Language Models (LLMs) to translate technical explanations into coherent, human-readable accounts. This survey provides the first systematic review of this approach, focusing on systems in which LLMs act as post-hoc narrative translators rather than autonomous explainers. We formalize this task as the Narrative Generation Problem, examine its integration with classical XAI methods such as feature attribution and counterfactual explanations across multiple data modalities, and introduce a taxonomy for narrative evaluation spanning three core dimensions. Finally, we analyze prompting strategies and outline open challenges and future directions for advancing reliable, interpretable, and context-aware XAI Narratives.},
@@ -54,9 +53,11 @@ and Esposito, Gianluca
 and Sciandrone, Marco},
 title={Exploring the potential of artificial intelligence in assessing the risk of gastric neoplastic lesions in patients with corpus atrophic gastritis},
 journal={Gastric Cancer},
-year={2025},
-month={Oct},
-day={22},
+year={2026},
+volume={29},
+number={1},
+pages={159--168},
+doi={10.1007/s10120-025-01679-7},
 abstract={Corpus atrophic gastritis (CAG) requires endoscopic-histological surveillance due to the risk of developing gastric neoplastic lesions (GNL). This study aimed to identify variables associated with GNL development at long-term follow-up using a Fisher score-based feature-ranking-approach coupled with a One-Class Support-Vector-Machine (SVM) model.},
 issn={1436-3305},
 pdf={https://doi.org/10.1007/s10120-025-01679-7},
@@ -78,23 +79,6 @@ url={https://doi.org/10.1007/s10120-025-01679-7}
       code={https://github.com/flaat/llm_kd},
 }
 
-@misc{loi2025evadingoverlappingcommunitydetection,
-      abbr={Preprint},
-      title={Evading Overlapping Community Detection via Proxy Node Injection}, 
-      author={Dario Loi and Matteo Silvestri and Fabrizio Silvestri and Gabriele Tolomei},
-      year={2025},
-      month={Sep},
-      eprint={2509.21211},
-      archivePrefix={arXiv},
-      primaryClass={cs.SI},
-      url={https://arxiv.org/abs/2509.21211}, 
-      abstract = "Protecting privacy in social graphs requires preventing sensitive information, such as community affiliations, from being inferred by graph analysis, without substantially altering the graph topology. We address this through the problem of \emph{community membership hiding} (CMH), which seeks edge modifications that cause a target node to exit its original community, regardless of the detection algorithm employed. Prior work has focused on non-overlapping community detection, where trivial strategies often suffice, but real-world graphs are better modeled by overlapping communities, where such strategies fail. To the best of our knowledge, we are the first to formalize and address CMH in this setting. In this work, we propose a deep reinforcement learning (DRL) approach that learns effective modification policies, including the use of proxy nodes, while preserving graph structure. Experiments on real-world datasets show that our method significantly outperforms existing baselines in both effectiveness and efficiency, offering a principled tool for privacy-preserving graph modification with overlapping communities.",
-      pdf={https://arxiv.org/pdf/2509.21211},
-      code={https://anonymous.4open.science/r/overlapping_comm_detect-EC02/README.md},
-}
-
-
-
 @article{silvestri2026righthidemaskingcommunity,
       abbr={OSNEM},
       title={The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring}, 
@@ -115,4 +99,32 @@ url={https://doi.org/10.1007/s10120-025-01679-7}
       code={https://github.com/hercolelab/community-membership-hiding},
 }
 
+@misc{vineis2026explainingagents,
+ abbr = {Preprint},
+ abstract = {AI Agents are increasingly deployed in real-world settings, where they interact with external tools and make sequential decisions with limited human oversight. This creates a pressing need for reliable and auditable explanations of what an agent did and why. However, traditional Explainable AI (XAI) methods fall short of providing the process-level transparency required for such interactive, multi-step systems, motivating a paradigm shift toward approaches specifically designed for AI Agents. To address this gap, we present a post-hoc XAI framework that transforms a lengthy agent's execution trace into a structured report and a faithful natural-language explanation explicitly grounded in its observable behavior. Because it relies solely on execution traces, the framework applies across different agent architectures, environments, and tasks. Human and automated evaluations across multiple benchmarks and architectures show that our framework produces high-quality, trace-faithful explanations while reliably identifying unsupported claims, unjustified actions, and evidence gaps, outperforming naive LLM-generated explanations.},
+ archivePrefix = {arXiv},
+ author = {Vineis, Vittoria and Veglianti, Fabiano and Antonelli, Lorenzo and Di Carlo, Claudia and Silvestri, Matteo and Tolomei, Gabriele},
+ eprint = {2609.06063},
+ month = {Sep},
+ pdf = {https://arxiv.org/pdf/2609.06063},
+ primaryClass = {cs.AI},
+ title = {Explaining AI Agents Through Execution Traces},
+ url = {https://arxiv.org/abs/2609.06063},
+ year = {2026}
+}
+
+@misc{sigillo2026emblailibrarian,
+ abbr = {Preprint},
+ abstract = {The web is increasingly accessed by AI agents rather than humans. Every agent needs knowledge, especially in the life-sciences, where agentic pipelines are growing fast. Access to the literature is a crucial part of that need, and resources such as Europe PMC, with over 40M indexed records, are widely used to meet it. Yet these resources were not built for AI agents: they take keywords and complex syntax and return whole papers, so every agent must learn the syntax, issue several searches, and read full papers to find the evidence it needs. We introduce EMBL AI Librarian, a knowledge layer that upgrades the Europe PMC interface for AI agents: an agent asks in natural language and receives evidence that answers it. A single LLM orchestrates the whole knowledge retrieval process: it plans complementary subqueries executed by the live Europe PMC search engine, then reads the selected papers and locates the relevant evidence. We evaluate Librarian across four benchmarks: literature synthesis, claim verification, open-domain question answering, and downstream biology tasks such as protocol questions and sequence manipulation. On ScholarQABench, Librarian improves Citation F1 by more than $16$ points over strong recently published baselines. Used as the retrieval layer of an existing claim-verification pipeline, it increases agreement with expert consensus; and on the open-form LitQA2 benchmark, a GPT-5.4 agent scores about $8$ points higher when grounded in Librarian than with web search. Overall, our results show that equipping life-science agents with the Librarian knowledge layer improves performance across a range of tasks. We release our code publicly at https://github.com/petroni-lab/librarian.},
+ archivePrefix = {arXiv},
+ author = {Sigillo, Luigi and Silvestri, Matteo and Tabaro, Francesco and Bhatnagar, Rajat and Mubashar, Syed Irtaza and Jeffryes, Matt and Nijjer, Daljit and Perera, Vittorio and Spjuth, Ola and Saez-Rodriguez, Julio and Harrison, Melissa and Petroni, Fabio},
+ code = {https://github.com/petroni-lab/librarian},
+ eprint = {2607.28229},
+ month = {Jul},
+ pdf = {https://arxiv.org/pdf/2607.28229},
+ primaryClass = {cs.CL},
+ title = {EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents},
+ url = {https://arxiv.org/abs/2607.28229},
+ year = {2026}
+}
 
