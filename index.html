@@ -18,12 +18,13 @@
   <script src="/assets/js/theme.js"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <script defer src="/assets/js/site.js"></script>
+  <script defer src="/assets/js/agent-scene.js"></script>
 </head>
-<body id="top">
+<body id="top" class="home-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="reading-progress" aria-hidden="true"></div>
   <header class="header">
-    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms22</a>
+    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms<span class="wordmark-accent">22</span></a>
     <nav aria-label="Main navigation">
       
       <a href="/" aria-current="page">About</a>
@@ -40,10 +41,10 @@
   <div class="site-grid">
     <aside class="identity" aria-label="About Matteo">
       <button class="portrait-button" type="button" aria-label="Enlarge portrait of Matteo Silvestri" data-portrait>
-        <img class="portrait" src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="160" height="192" fetchpriority="high">
+        <img class="portrait" src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="208" height="248" fetchpriority="high">
         <span class="portrait-caption">Enlarge portrait ↗</span>
       </button>
-      <a class="identity-name" href="/">Matteo<br> Silvestri<span class="accent">.</span></a>
+      <a class="identity-name" href="/">Matteo Silvestri<span class="accent">.</span></a>
       <p class="identity-role">PhD student · AI researcher</p>
       <p class="identity-affiliations"><a href="https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx">Sapienza University of Rome ↗</a><br><a href="https://www.embl.org/groups/petroni/">EMBL · Petroni Group ↗</a></p>
       <p class="location"><span aria-hidden="true">↳</span> Rome, Italy</p>
@@ -54,14 +55,106 @@
     </aside>
     <main id="main" tabindex="-1">
 <section class="hero enter">
-  <h1>Driven by a love for mathematics, passionate about AI technologies.</h1>
+  <div class="hero-heading">
+    <h1>Driven by a love for mathematics, passionate about AI technologies.</h1>
+    <div class="agent-scene" aria-hidden="true" data-agent-scene>
+      <svg viewBox="0 0 320 350" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <g class="flow-wires" stroke="currentColor" stroke-width="1">
+    <path d="M22 72H93Q108 72 108 87V128Q108 143 123 143H146"/>
+    <path d="M194 143H212Q228 143 228 127V62Q228 46 244 46H282"/>
+    <path d="M194 160H280"/>
+    <path d="M194 177H212Q228 177 228 193V250Q228 266 244 266H282"/>
+    <path d="M146 177H126Q108 177 108 194V250Q108 266 92 266H22"/>
+    <path d="M170 194V304" stroke-dasharray="3 6"/>
+  </g>
+  <g class="flow-packets" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+    <path class="packet packet-1" d="M22 72H93Q108 72 108 87V128Q108 143 123 143H146"/>
+    <path class="packet packet-2" d="M194 143H212Q228 143 228 127V62Q228 46 244 46H282"/>
+    <path class="packet packet-3" d="M194 160H280"/>
+    <path class="packet packet-4" d="M194 177H212Q228 177 228 193V250Q228 266 244 266H282"/>
+    <path class="packet packet-5" d="M146 177H126Q108 177 108 194V250Q108 266 92 266H22"/>
+  </g>
+  <g class="flow-ports" fill="var(--bg)" stroke="currentColor"><rect x="14" y="64" width="16" height="16" rx="4"/><rect x="274" y="38" width="16" height="16" rx="4"/><rect x="274" y="152" width="16" height="16" rx="4"/><rect x="274" y="258" width="16" height="16" rx="4"/><rect x="14" y="258" width="16" height="16" rx="4"/></g>
+  <rect class="agent-core" x="142" y="132" width="56" height="56" rx="13" fill="var(--bg)" stroke="currentColor"/>
+  <path d="M157 152L165 160L157 168M171 169H182" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="flow-labels" fill="currentColor" font-family="monospace" font-size="9" letter-spacing="1"><text x="13" y="53">TASK</text><text x="244" y="28">SEARCH</text><text x="250" y="142">TOOLS</text><text x="233" y="293">EVIDENCE</text><text x="13" y="293">CONTEXT</text><text x="150" y="326">AGENT</text></g>
+</svg>
+    </div>
+    <button class="motion-toggle" type="button" aria-label="Pause animation" aria-pressed="false" hidden><span class="motion-indicator" aria-hidden="true"></span><span data-motion-label>Pause motion</span></button>
+  </div>
   <div class="bio"><p>I’m a second-year PhD student at <a href="https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx">Sapienza University of Rome</a>.<br />
 I am a member of the <a href="https://hercolelab.netlify.app/">HERCOLE Lab</a> research laboratory, and I am currently a research trainee at the <a href="https://www.embl.org/groups/petroni/">European Molecular Biology Laboratory</a>.</p>
 <p>My research focuses on using large language models to solve useful downstream tasks efficiently. For instance, I work on XAI Narratives, where LLMs are used to turn technical explainability outputs into human-friendly explanations while preserving faithfulness to the underlying model behavior. More broadly, I am interested in AI agents, especially in how they can leverage context to become more efficient, autonomous, and reliable.</p></div>
-  <a class="text-link" href="/publications/">Publications <span aria-hidden="true">↗</span></a>
+  <div class="hero-links">
+    <a class="button-link" href="/publications/">Publications <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="mailto:m.silvestri@uniroma1.it">Email <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+<section class="featured-section reveal" aria-labelledby="featured-title">
+  <div class="section-heading">
+    <h2 id="featured-title">Selected publications</h2>
+    <a class="text-link" href="/publications/">All publications <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="featured-grid">
+    
+    
+    <article class="featured-paper">
+      <a class="featured-art" href="/publications/#sigillo2026emblailibrarian" tabindex="-1" aria-hidden="true">
+        
+          <svg viewBox="0 0 460 230" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <g stroke="currentColor" stroke-width="1.2" class="diagram-lines"><path d="M95 112H163M241 112H308M348 90V61H202V90"/><path d="M149 108L155 112L149 116M294 108L300 112L294 116"/></g>
+  <rect x="28" y="86" width="68" height="52" rx="8" fill="var(--bg)" stroke="currentColor" class="diagram-lines"/>
+  <path d="M46 104H79M46 113H70M46 122H62" stroke="currentColor" class="diagram-lines"/>
+  <rect x="164" y="86" width="78" height="52" rx="10" fill="var(--accent-soft)" stroke="currentColor"/>
+  <path d="M184 103L194 112L184 121M203 122H220" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="var(--bg)" stroke="currentColor" class="diagram-lines"><rect x="320" y="76" width="63" height="58" rx="5"/><rect x="313" y="83" width="63" height="58" rx="5"/><rect x="306" y="90" width="63" height="58" rx="5"/></g>
+  <path d="M320 105H354M320 114H354M320 123H344" stroke="currentColor" class="diagram-lines"/>
+  <path d="M320 132H349" stroke="currentColor" stroke-width="3" opacity=".5"/>
+  <g fill="currentColor" font-family="monospace" font-size="10"><text x="32" y="164">Question</text><text x="184" y="164">Agent</text><text x="308" y="174">Evidence</text><text x="233" y="49" opacity=".65">Europe PMC</text></g>
+  <circle class="diagram-signal" cx="130" cy="112" r="3" fill="currentColor"/>
+</svg>
+        
+      </a>
+      <div class="featured-content">
+        <p class="paper-venue">2026 <span aria-hidden="true">/</span> Preprint</p>
+        <h3><a href="/publications/#sigillo2026emblailibrarian">EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents</a></h3>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.28229">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/petroni-lab/librarian">Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </article>
+    
+    
+    
+    <article class="featured-paper">
+      <a class="featured-art" href="/publications/#vineis2026explainingagents" tabindex="-1" aria-hidden="true">
+        
+          <svg viewBox="0 0 460 230" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <path d="M55 64V160M72 79H212M72 112H212M72 145H212M227 112H281" stroke="currentColor" class="diagram-lines"/>
+  <g fill="var(--bg)" stroke="currentColor"><circle cx="55" cy="79" r="5"/><circle cx="55" cy="112" r="5"/><circle cx="55" cy="145" r="5"/></g>
+  <g fill="currentColor" font-family="monospace" font-size="10" class="diagram-text"><text x="78" y="72">tool.call</text><text x="78" y="105">observation</text><text x="78" y="138">agent.action</text></g>
+  <rect x="281" y="70" width="117" height="85" rx="8" fill="var(--bg)" stroke="currentColor" class="diagram-lines"/>
+  <path d="M298 91H377M298 101H370M298 124H377M298 134H357" stroke="currentColor" class="diagram-lines"/>
+  <path d="M298 113H372" stroke="currentColor" stroke-width="4" opacity=".35"/>
+  <g fill="currentColor" font-family="monospace" font-size="10"><text x="72" y="181">Execution trace</text><text x="292" y="181">Explanation</text></g>
+  <circle class="diagram-signal" cx="252" cy="112" r="3" fill="currentColor"/>
+</svg>
+        
+      </a>
+      <div class="featured-content">
+        <p class="paper-venue">2026 <span aria-hidden="true">/</span> Preprint</p>
+        <h3><a href="/publications/#vineis2026explainingagents">Explaining AI Agents Through Execution Traces</a></h3>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2609.06063">Paper <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </article>
+    
+    
+  </div>
 </section>
 <section class="news-section reveal" aria-labelledby="news-title">
-  <div class="section-heading"><h2 id="news-title">News</h2><a class="text-link" href="/news/">All news ↗</a></div>
+  <div class="section-heading"><h2 id="news-title">News</h2><a class="text-link" href="/news/">All news <span aria-hidden="true">↗</span></a></div>
   <ol class="news-list"><li><a class="news-date" href="/news/announcement_12/"><time datetime="2026-09-24">24 Sep 2026</time></a><div class="news-body"><p>A long chapter closes: my first work as a PhD student, <a href="https://www.sciencedirect.com/science/article/pii/S2468696426000133">The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring</a>, is now published in <a href="https://www.sciencedirect.com/journal/online-social-networks-and-media">Online Social Networks and Media</a> (Elsevier)!</p></div></li><li><a class="news-date" href="/news/announcement_11/"><time datetime="2026-09-02">02 Sep 2026</time></a><div class="news-body"><p><strong>Small models, small compute footprint, no loss in explanation quality.</strong> That's the claim of our latest work <em>"Small Language Models as Resource-Aware Counterfactual Narrators: Knowledge Distillation and Self-Refinement for Green Local XAI"</em>, which we'll bring to the <a href="https://sites.google.com/uniroma1.it/green-ai-workshop/editions/ecml-pkdd-2026">GREEN-AI Workshop</a> at ECML-PKDD 2026 in Naples 🇮🇹</p></div></li><li><a class="news-date" href="/news/announcement_10/"><time datetime="2026-08-05">05 Aug 2026</time></a><div class="news-body"><p>Happy to share that our paper <a href="https://arxiv.org/pdf/2510.20351">When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets</a> has been accepted at <a href="https://colmweb.org/AcceptedPapers.html">COLM 2026</a>! 🇺🇸</p></div></li><li><a class="news-date" href="/news/announcement_9/"><time datetime="2026-04-01">01 Apr 2026</time></a><div class="news-body"><p>I started a <strong>Research Traineeship</strong> at the <a href="https://www.embl.org/groups/petroni/">European Molecular Biology Laboratory</a>, focusing on AI agents for scientific discovery! 🧪</p></div></li><li><a class="news-date" href="/news/announcement_8/"><time datetime="2026-03-26">26 Mar 2026</time></a><div class="news-body"><p>A new milestone! Our latest work <a href="https://arxiv.org/abs/2603.06485">PONTE: Personalized Orchestration for Natural
 Language Trustworthy Explanations</a> has been accepted at the <a href="https://xaiworldconference.com/2026/">4th XAI World Conference</a>! Brasil we're coming 🇧🇷</p></div></li></ol>
 </section>
