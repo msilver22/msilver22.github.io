@@ -1,0 +1,12 @@
+<svg viewBox="0 0 460 230" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <g stroke="currentColor" stroke-width="1.2" class="diagram-lines"><path d="M95 112H163M241 112H308M348 90V61H202V90"/><path d="M149 108L155 112L149 116M294 108L300 112L294 116"/></g>
+  <rect x="28" y="86" width="68" height="52" rx="8" fill="var(--bg)" stroke="currentColor" class="diagram-lines"/>
+  <path d="M46 104H79M46 113H70M46 122H62" stroke="currentColor" class="diagram-lines"/>
+  <rect x="164" y="86" width="78" height="52" rx="10" fill="var(--accent-soft)" stroke="currentColor"/>
+  <path d="M184 103L194 112L184 121M203 122H220" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="var(--bg)" stroke="currentColor" class="diagram-lines"><rect x="320" y="76" width="63" height="58" rx="5"/><rect x="313" y="83" width="63" height="58" rx="5"/><rect x="306" y="90" width="63" height="58" rx="5"/></g>
+  <path d="M320 105H354M320 114H354M320 123H344" stroke="currentColor" class="diagram-lines"/>
+  <path d="M320 132H349" stroke="currentColor" stroke-width="3" opacity=".5"/>
+  <g fill="currentColor" font-family="monospace" font-size="10"><text x="32" y="164">Question</text><text x="184" y="164">Agent</text><text x="308" y="174">Evidence</text><text x="233" y="49" opacity=".65">Europe PMC</text></g>
+  <circle class="diagram-signal" cx="130" cy="112" r="3" fill="currentColor"/>
+</svg>

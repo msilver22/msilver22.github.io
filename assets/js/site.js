@@ -61,6 +61,9 @@
   }, { passive: true });
   addEventListener('resize', updateProgress);
   updateProgress();
+  document.querySelectorAll('.paper-details').forEach(details => {
+    details.addEventListener('toggle', updateProgress);
+  });
 
   const search = document.querySelector('#publication-search');
   if (search) {
@@ -102,6 +105,19 @@
       });
     });
   }
+
+  // Opening a publication directly makes its abstract available immediately.
+  const revealLinkedPaper = () => {
+    if (!location.hash) return;
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
+    const paper = document.getElementById(id);
+    if (!paper?.matches('[data-paper]')) return;
+    const abstract = paper.querySelector('.paper-details:not(.citation)');
+    if (abstract) abstract.open = true;
+  };
+  revealLinkedPaper();
+  addEventListener('hashchange', revealLinkedPaper);
 
   const dialog = document.querySelector('.portrait-dialog');
   if (typeof dialog.showModal === 'function') {

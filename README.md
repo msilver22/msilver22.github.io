@@ -63,3 +63,13 @@ available as the `website` workflow artifact. No hosting migration is required.
 
 The previous site used al-folio. Its MIT license is retained in `LICENSE`.
 Original site content and assets are preserved in this custom implementation.
+
+## Homepage design
+
+`site.yml` lists the two `featured_publications` by BibTeX ID. Only entries still
+present in the bibliography render. The original SVG diagrams in
+`templates/graphics/` illustrate agent execution and the featured papers; they
+are schematic illustrations, not live agent runs or figures copied from papers.
+The homepage animation supports pause/resume, system reduced motion, and
+pauses its execution paths when the illustration is off-screen. All assets are
+local and no AI service is called by the illustration.

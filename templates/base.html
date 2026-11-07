@@ -18,12 +18,13 @@
   <script src="/assets/js/theme.js"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <script defer src="/assets/js/site.js"></script>
+  {% if path == '/' %}<script defer src="/assets/js/agent-scene.js"></script>{% endif %}
 </head>
-<body id="top">
+<body id="top" class="{% if path == '/' %}home-page{% endif %}">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="reading-progress" aria-hidden="true"></div>
   <header class="header">
-    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms22</a>
+    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms<span class="wordmark-accent">22</span></a>
     <nav aria-label="Main navigation">
       {% for label, url in [('About', '/'), ('Publications', '/publications/'), ('CV', '/cv/'), ('News', '/news/')] %}
       <a href="{{ url }}" {% if path == url %}aria-current="page"{% endif %}>{{ label }}</a>
@@ -34,10 +35,10 @@
   <div class="site-grid">
     <aside class="identity" aria-label="About Matteo">
       <button class="portrait-button" type="button" aria-label="Enlarge portrait of Matteo Silvestri" data-portrait>
-        <img class="portrait" src="{{ site.portrait }}" alt="Matteo Silvestri" width="160" height="192" fetchpriority="high">
+        <img class="portrait" src="{{ site.portrait }}" alt="Matteo Silvestri" width="208" height="248" fetchpriority="high">
         <span class="portrait-caption">Enlarge portrait ↗</span>
       </button>
-      <a class="identity-name" href="/">Matteo<br> Silvestri<span class="accent">.</span></a>
+      <a class="identity-name" href="/">Matteo Silvestri<span class="accent">.</span></a>
       <p class="identity-role">{{ site.role }}</p>
       <p class="identity-affiliations"><a href="https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx">Sapienza University of Rome ↗</a><br><a href="https://www.embl.org/groups/petroni/">EMBL · Petroni Group ↗</a></p>
       <p class="location"><span aria-hidden="true">↳</span> {{ site.location }}</p>

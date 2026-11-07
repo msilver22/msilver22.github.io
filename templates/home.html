@@ -1,12 +1,49 @@
 {% extends 'base.html' %}
 {% block content %}
 <section class="hero enter">
-  <h1>{{ site.tagline }}</h1>
+  <div class="hero-heading">
+    <h1>{{ site.tagline }}</h1>
+    <div class="agent-scene" aria-hidden="true" data-agent-scene>
+      {% include 'graphics/agent-flow.svg' %}
+    </div>
+    <button class="motion-toggle" type="button" aria-label="Pause animation" aria-pressed="false" hidden><span class="motion-indicator" aria-hidden="true"></span><span data-motion-label>Pause motion</span></button>
+  </div>
   <div class="bio">{{ bio }}</div>
-  <a class="text-link" href="/publications/">Publications <span aria-hidden="true">↗</span></a>
+  <div class="hero-links">
+    <a class="button-link" href="/publications/">Publications <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="mailto:{{ email }}">Email <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+<section class="featured-section reveal" aria-labelledby="featured-title">
+  <div class="section-heading">
+    <h2 id="featured-title">Selected publications</h2>
+    <a class="text-link" href="/publications/">All publications <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="featured-grid">
+    {% for id in site.featured_publications %}
+    {% for paper in publications if paper.ID == id %}
+    <article class="featured-paper">
+      <a class="featured-art" href="/publications/#{{ paper.ID }}" tabindex="-1" aria-hidden="true">
+        {% if paper.ID == 'sigillo2026emblailibrarian' %}
+          {% include 'graphics/librarian.svg' %}
+        {% else %}
+          {% include 'graphics/execution-trace.svg' %}
+        {% endif %}
+      </a>
+      <div class="featured-content">
+        <p class="paper-venue">{{ paper.year }} <span aria-hidden="true">/</span> {{ paper.get('abbr', 'Publication') }}</p>
+        <h3><a href="/publications/#{{ paper.ID }}">{{ paper.title }}</a></h3>
+        <div class="paper-actions">
+          {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">↗</span></a>{% endfor %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+    {% endfor %}
+  </div>
 </section>
 <section class="news-section reveal" aria-labelledby="news-title">
-  <div class="section-heading"><h2 id="news-title">News</h2><a class="text-link" href="/news/">All news ↗</a></div>
+  <div class="section-heading"><h2 id="news-title">News</h2><a class="text-link" href="/news/">All news <span aria-hidden="true">↗</span></a></div>
   {% with entries=news[:site.news_limit] %}{% include 'news-list.html' %}{% endwith %}
 </section>
 {% endblock %}
