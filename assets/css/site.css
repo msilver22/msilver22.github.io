@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Matteo Silvestri — a quiet, personal research notebook. */
-:root{--bg:#f8f7f4;--surface:#efeeea;--ink:#28272b;--muted:#6c6972;--line:#dfdce2;--accent:#7654a7;--accent-soft:#eee7f5;--header:rgba(248,247,244,.93);--serif:Georgia,'Times New Roman',serif;--sans:Inter,'Helvetica Neue',Arial,sans-serif;color-scheme:light}
-:root[data-theme=dark]{--bg:#19191d;--surface:#232329;--ink:#e9e6ee;--muted:#aaa5b2;--line:#39363f;--accent:#c0a0eb;--accent-soft:#30263e;--header:rgba(25,25,29,.93);color-scheme:dark}
+:root{--bg:#f8f7f4;--surface:#efeeea;--ink:#28272b;--muted:#6c6972;--line:#dfdce2;--accent:#8a6508;--accent-soft:#f2e7c9;--header:rgba(248,247,244,.93);--serif:Georgia,'Times New Roman',serif;--sans:Inter,'Helvetica Neue',Arial,sans-serif;color-scheme:light}
+:root[data-theme=dark]{--bg:#19191d;--surface:#232329;--ink:#e9e6ee;--muted:#aaa5b2;--line:#39363f;--accent:#d6ab42;--accent-soft:#362e1c;--header:rgba(25,25,29,.93);color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:108px}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 var(--sans);-webkit-font-smoothing:antialiased;transition:background-color .25s,color .25s}
