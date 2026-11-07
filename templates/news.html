@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-<header class="page-heading enter"><p class="eyebrow">Along the way</p><h1>News<span class="accent">.</span></h1><p>Papers, milestones, and little updates from my research.</p></header>
+<header class="page-heading enter"><h1>News</h1></header>
 {% for group in news|groupby('date.year')|reverse %}<section class="news-section reveal"><div class="section-heading"><h2>{{ group.grouper }}</h2><span class="eyebrow">{{ group.list|length }} updates</span></div>{% with entries=group.list %}{% include 'news-list.html' %}{% endwith %}</section>{% endfor %}
 {% endblock %}

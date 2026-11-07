@@ -22,3 +22,10 @@ Markdown, PyYAML, and bibtexparser to build static HTML for GitHub Pages.
   `gh-pages`. Preserve this deployment contract unless explicitly changing it.
 - Before pushing, preview all four main pages and run the content/link checks.
   If browser tools are unavailable, report that limitation.
+
+## Writing style
+
+Use simple, factual labels and prose. Avoid decorative slogans, marketing copy,
+and invented research summaries. The homepage headline is the author's wording:
+"Driven by a love for mathematics, passionate about AI technologies."
+Keep the homepage news heading as "News" and do not add topic cards.

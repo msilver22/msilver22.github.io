@@ -1,18 +1,8 @@
 name: Matteo Silvestri
 url: https://msilver22.github.io
 description: Matteo Silvestri — mathematics, language models, and AI agents. PhD student at Sapienza University of Rome and research trainee at EMBL.
-tagline: Mathematics at heart. AI in practice.
+tagline: Driven by a love for mathematics, passionate about AI technologies.
 role: PhD student · AI researcher
 location: Rome, Italy
 portrait: /assets/img/prof_pic_new.jpg
 news_limit: 5
-research:
-  - number: '01'
-    title: Language & explanations
-    text: Turning technical model outputs into faithful, human-friendly narratives.
-  - number: '02'
-    title: Agents & discovery
-    text: Exploring how context can make AI agents more efficient, autonomous, and reliable.
-  - number: '03'
-    title: Learning & trust
-    text: Studying data contamination, model evaluation, and privacy in social networks.
