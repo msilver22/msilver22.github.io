@@ -24,11 +24,7 @@
     {% for paper in publications if paper.ID == id %}
     <article class="featured-paper">
       <a class="featured-art" href="/publications/#{{ paper.ID }}" tabindex="-1" aria-hidden="true">
-        {% if paper.ID == 'sigillo2026emblailibrarian' %}
-          {% include 'graphics/librarian.svg' %}
-        {% else %}
-          {% include 'graphics/execution-trace.svg' %}
-        {% endif %}
+        <img src="/assets/img/publications/{{ paper.ID }}.png" alt="" width="1200" height="1000" loading="lazy" decoding="async">
       </a>
       <div class="featured-content">
         <p class="paper-venue">{{ paper.year }} <span aria-hidden="true">/</span> {{ paper.get('abbr', 'Publication') }}</p>

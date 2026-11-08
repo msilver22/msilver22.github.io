@@ -5,7 +5,6 @@
     <path d="M194 160H280"/>
     <path d="M194 177H212Q228 177 228 193V250Q228 266 244 266H282"/>
     <path d="M146 177H126Q108 177 108 194V250Q108 266 92 266H22"/>
-    <path d="M170 194V304" stroke-dasharray="3 6"/>
   </g>
   <g class="flow-packets" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
     <path class="packet packet-1" d="M22 72H93Q108 72 108 87V128Q108 143 123 143H146"/>
@@ -16,6 +15,13 @@
   </g>
   <g class="flow-ports" fill="var(--bg)" stroke="currentColor"><rect x="14" y="64" width="16" height="16" rx="4"/><rect x="274" y="38" width="16" height="16" rx="4"/><rect x="274" y="152" width="16" height="16" rx="4"/><rect x="274" y="258" width="16" height="16" rx="4"/><rect x="14" y="258" width="16" height="16" rx="4"/></g>
   <rect class="agent-core" x="142" y="132" width="56" height="56" rx="13" fill="var(--bg)" stroke="currentColor"/>
-  <path d="M157 152L165 160L157 168M171 169H182" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-  <g class="flow-labels" fill="currentColor" font-family="monospace" font-size="9" letter-spacing="1"><text x="13" y="53">TASK</text><text x="244" y="28">SEARCH</text><text x="250" y="142">TOOLS</text><text x="233" y="293">EVIDENCE</text><text x="13" y="293">CONTEXT</text><text x="150" y="326">AGENT</text></g>
+  <g class="agent-robot" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M170 140V147M148 156V166M192 156V166"/>
+    <circle cx="170" cy="137" r="2.5" fill="var(--accent-soft)"/>
+    <rect x="153" y="147" width="34" height="29" rx="7" fill="var(--accent-soft)"/>
+    <rect x="160" y="155" width="4" height="5" rx="1.5" fill="currentColor" stroke="none"/>
+    <rect x="176" y="155" width="4" height="5" rx="1.5" fill="currentColor" stroke="none"/>
+    <path d="M163 167Q170 171 177 167M164 176V181H176V176"/>
+  </g>
+  <g class="flow-labels" fill="currentColor" font-family="monospace" font-size="9" letter-spacing="1"><text x="13" y="53">TASK</text><text x="244" y="28">SEARCH</text><text x="250" y="142">TOOLS</text><text x="233" y="293">EVIDENCE</text><text x="13" y="293">CONTEXT</text></g>
 </svg>

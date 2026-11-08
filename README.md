@@ -67,9 +67,13 @@ Original site content and assets are preserved in this custom implementation.
 ## Homepage design
 
 `site.yml` lists the two `featured_publications` by BibTeX ID. Only entries still
-present in the bibliography render. The original SVG diagrams in
-`templates/graphics/` illustrate agent execution and the featured papers; they
-are schematic illustrations, not live agent runs or figures copied from papers.
-The homepage animation supports pause/resume, system reduced motion, and
-pauses its execution paths when the illustration is off-screen. All assets are
-local and no AI service is called by the illustration.
+present in the bibliography render. Their preview images live in
+`assets/img/publications/<BibTeX-ID>.png` and combine crops of the title and
+abstract from the original PDFs, omitting intervening figures. Keep the source PDF links in the bibliography.
+The SVG in `templates/graphics/agent-flow.svg` is a decorative illustration of
+agent execution. It supports pause/resume, system reduced motion, and pauses
+when off-screen. No AI service is called by the illustration.
+
+To regenerate the paper previews, install the optional `PyMuPDF` package and run
+`python scripts/render_publication_previews.py`. PDF versions and crop coordinates
+are recorded in that script; preview generation is not part of the site build.
