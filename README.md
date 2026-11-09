@@ -71,8 +71,8 @@ present in the bibliography render. Their preview images live in
 `assets/img/publications/<BibTeX-ID>.png` and combine crops of the title and
 abstract from the original PDFs, omitting intervening figures. Keep the source PDF links in the bibliography.
 The SVG in `templates/graphics/agent-flow.svg` is a decorative illustration of
-agent execution. It supports pause/resume, system reduced motion, and pauses
-when off-screen. No AI service is called by the illustration.
+agent execution. It respects system reduced motion and pauses when off-screen or when the tab
+is hidden. No AI service is called by the illustration.
 
 To regenerate the paper previews, install the optional `PyMuPDF` package and run
 `python scripts/render_publication_previews.py`. PDF versions and crop coordinates

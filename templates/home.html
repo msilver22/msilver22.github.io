@@ -6,7 +6,6 @@
     <div class="agent-scene" aria-hidden="true" data-agent-scene>
       {% include 'graphics/agent-flow.svg' %}
     </div>
-    <button class="motion-toggle" type="button" aria-label="Pause animation" aria-pressed="false" hidden><span class="motion-indicator" aria-hidden="true"></span><span data-motion-label>Pause motion</span></button>
   </div>
   <div class="bio">{{ bio }}</div>
   <div class="hero-links">
@@ -22,15 +21,14 @@
   <div class="featured-grid">
     {% for id in site.featured_publications %}
     {% for paper in publications if paper.ID == id %}
-    <article class="featured-paper">
-      <a class="featured-art" href="/publications/#{{ paper.ID }}" tabindex="-1" aria-hidden="true">
+    <article class="featured-paper" aria-label="{{ paper.title }}">
+      <a class="featured-art" href="/publications/#{{ paper.ID }}" aria-label="View publication: {{ paper.title }}">
         <img src="/assets/img/publications/{{ paper.ID }}.png" alt="" width="1200" height="1000" loading="lazy" decoding="async">
       </a>
       <div class="featured-content">
-        <p class="paper-venue">{{ paper.year }} <span aria-hidden="true">/</span> {{ paper.get('abbr', 'Publication') }}</p>
-        <h3><a href="/publications/#{{ paper.ID }}">{{ paper.title }}</a></h3>
+        <p class="paper-venue">{{ paper.get('abbr', 'Preprint') }}</p>
         <div class="paper-actions">
-          {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">↗</span></a>{% endfor %}
+          {% for link in paper.links if link.label in ['Paper', 'Code'] %}<a href="{{ link.url }}" aria-label="{{ link.label }}: {{ paper.title }}">{{ link.label }} <span aria-hidden="true">↗</span></a>{% endfor %}
         </div>
       </div>
     </article>
