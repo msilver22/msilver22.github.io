@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page="news">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>News · 05 August 2026 · Matteo Silvestri</title>
   <meta name="description" content="Matteo Silvestri — mathematics, language models, and AI agents. PhD student at Sapienza University of Rome and research trainee at EMBL.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f8f7f4">
+  <meta name="theme-color" content="#e9eef2">
   <meta property="og:title" content="Matteo Silvestri · News · 05 August 2026">
   <meta property="og:description" content="Matteo Silvestri — mathematics, language models, and AI agents. PhD student at Sapienza University of Rome and research trainee at EMBL.">
   <meta property="og:image" content="https://msilver22.github.io/assets/img/prof_pic_new.jpg">
@@ -15,47 +15,69 @@
   <link rel="canonical" href="https://msilver22.github.io/news/announcement_10/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Matteo Silvestri — News" href="/feed.xml">
+  <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <script src="/assets/js/theme.js"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <script defer src="/assets/js/site.js"></script>
   
 </head>
-<body id="top" class="">
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="reading-progress" aria-hidden="true"></div>
-  <header class="header">
-    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms<span class="wordmark-accent">22</span></a>
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="i-out" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 2.5v10M3.5 8.5 8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-up" viewBox="0 0 16 16"><path d="M8 13.5v-10M3.5 7.5 8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-left" viewBox="0 0 16 16"><path d="M13.5 8h-10M7.5 3.5 3 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-right" viewBox="0 0 16 16"><path d="M2.5 8h10M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 2.5v11M2.5 8h11" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 16 16"><path d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="2.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 16 16"><path d="M4.5 2.5 13 8l-8.5 5.5z" fill="currentColor"/></symbol>
+  </svg>
+  <header class="nav wrap">
+    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms22</a>
     <nav aria-label="Main navigation">
-      
-      <a href="/" >About</a>
-      
-      <a href="/publications/" >Publications</a>
-      
-      <a href="/cv/" >CV</a>
-      
-      <a href="/news/" >News</a>
-      
+      <ul>
+        
+        <li><a href="/" data-ink="home" ><span class="sq" aria-hidden="true"></span>About</a></li>
+        
+        <li><a href="/publications/" data-ink="publications" ><span class="sq" aria-hidden="true"></span>Publications</a></li>
+        
+        <li><a href="/cv/" data-ink="cv" ><span class="sq" aria-hidden="true"></span>CV</a></li>
+        
+        <li><a href="/news/" data-ink="news" ><span class="sq" aria-hidden="true"></span>News</a></li>
+        
+      </ul>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" hidden><span class="theme-icon" aria-hidden="true">◐</span></button>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" hidden><svg class="icon icon-theme" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-theme"/></svg></button>
   </header>
-  <div class="site-grid">
-    <aside class="identity" aria-label="About Matteo">
-      <button class="portrait-button" type="button" aria-label="Enlarge portrait of Matteo Silvestri" data-portrait>
-        <img class="portrait" src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="208" height="248" fetchpriority="high">
-        <span class="portrait-caption">Enlarge portrait ↗</span>
-      </button>
-      <a class="identity-name" href="/">Matteo Silvestri<span class="accent">.</span></a>
-      <p class="identity-role">PhD student · AI researcher</p>
-      <p class="identity-affiliations"><a href="https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx">Sapienza University of Rome ↗</a><br><a href="https://www.embl.org/groups/petroni/">EMBL · Petroni Group ↗</a></p>
-      <p class="location"><span aria-hidden="true">↳</span> Rome, Italy</p>
-      <div class="social-links" aria-label="Contact and profiles">
-        <a href="mailto:m.silvestri@uniroma1.it">Email <span aria-hidden="true">↗</span></a><a href="https://github.com/msilver22">GitHub <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=M66vcc0AAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/matteo-silvestri-22-peedmat/">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://twitter.com/Silver22_2k">X <span aria-hidden="true">↗</span></a><a href="https://discord.com/users/1081636787220398261">Discord <span aria-hidden="true">↗</span></a><a href="https://hercolelab.netlify.app/"><img class="lab-logo" src="/assets/img/hercolelab_logo.png" alt="" width="15" height="15">HERCOLELab <span aria-hidden="true">↗</span></a>
-      </div>
-      <a class="identity-cv" href="/assets/pdf/cv.pdf">Download CV <span aria-hidden="true">↓</span></a>
-    </aside>
-    <main id="main" tabindex="-1"><article class="page-heading enter"><a class="text-link" href="/news/">← All news</a><p class="eyebrow"><time datetime="2026-08-05">05 August 2026</time></p><h1>News</h1><div class="bio"><p>Happy to share that our paper <a href="https://arxiv.org/pdf/2510.20351">When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets</a> has been accepted at <a href="https://colmweb.org/AcceptedPapers.html">COLM 2026</a>! 🇺🇸</p></div></article></main>
+  <main id="main" tabindex="-1">
+<article>
+  <header class="masthead">
+    <div class="wrap masthead-grid">
+      <h1 class="display"><span class="w"><span style="--i:0">News</span></span></h1>
+      <p class="masthead-date"><time datetime="2026-08-05">05 August 2026</time></p>
+    </div>
+  </header>
+  <div class="wrap item">
+    <div class="item-body prose"><p>Happy to share that our paper <a href="https://arxiv.org/pdf/2510.20351">When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets</a> has been accepted at <a href="https://colmweb.org/AcceptedPapers.html">COLM 2026</a>! 🇺🇸</p></div>
+    <a class="link" href="/news/"><svg class="icon icon-left" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-left"/></svg> All news</a>
   </div>
-  <footer class="footer"><span>© 2026 Matteo Silvestri</span><a href="/feed.xml">RSS ↗</a><a href="#top">Back to top ↑</a></footer>
-  <dialog class="portrait-dialog" aria-label="Portrait of Matteo Silvestri"><button type="button" data-close-portrait aria-label="Close portrait">Close ×</button><img src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="640" height="768"></dialog>
+</article>
+</main>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <a class="footer-email" href="mailto:m.silvestri@uniroma1.it">m.silvestri@uniroma1.it</a>
+      <ul class="footer-links" aria-label="Contact and profiles">
+        <li><a href="https://github.com/msilver22">GitHub <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://scholar.google.com/citations?user=M66vcc0AAAAJ">Google Scholar <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://www.linkedin.com/in/matteo-silvestri-22-peedmat/">LinkedIn <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://twitter.com/Silver22_2k">X <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://discord.com/users/1081636787220398261">Discord <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://hercolelab.netlify.app/">HERCOLELab <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li>
+        <li><a href="/assets/pdf/cv.pdf">Download CV <svg class="icon icon-down" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-down"/></svg></a></li>
+      </ul>
+      <div class="footer-meta">
+        <span>© 2026 Matteo Silvestri</span>
+        <a href="/feed.xml">RSS <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a>
+        <a href="#top">Back to top <svg class="icon icon-up" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

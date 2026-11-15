@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page="news">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>News · Matteo Silvestri</title>
   <meta name="description" content="Matteo Silvestri — mathematics, language models, and AI agents. PhD student at Sapienza University of Rome and research trainee at EMBL.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f8f7f4">
+  <meta name="theme-color" content="#e9eef2">
   <meta property="og:title" content="Matteo Silvestri · News">
   <meta property="og:description" content="Matteo Silvestri — mathematics, language models, and AI agents. PhD student at Sapienza University of Rome and research trainee at EMBL.">
   <meta property="og:image" content="https://msilver22.github.io/assets/img/prof_pic_new.jpg">
@@ -15,53 +15,84 @@
   <link rel="canonical" href="https://msilver22.github.io/news/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Matteo Silvestri — News" href="/feed.xml">
+  <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <script src="/assets/js/theme.js"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <script defer src="/assets/js/site.js"></script>
   
 </head>
-<body id="top" class="">
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="reading-progress" aria-hidden="true"></div>
-  <header class="header">
-    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms<span class="wordmark-accent">22</span></a>
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="i-out" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 2.5v10M3.5 8.5 8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-up" viewBox="0 0 16 16"><path d="M8 13.5v-10M3.5 7.5 8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-left" viewBox="0 0 16 16"><path d="M13.5 8h-10M7.5 3.5 3 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-right" viewBox="0 0 16 16"><path d="M2.5 8h10M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 2.5v11M2.5 8h11" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 16 16"><path d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="2.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 16 16"><path d="M4.5 2.5 13 8l-8.5 5.5z" fill="currentColor"/></symbol>
+  </svg>
+  <header class="nav wrap">
+    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms22</a>
     <nav aria-label="Main navigation">
-      
-      <a href="/" >About</a>
-      
-      <a href="/publications/" >Publications</a>
-      
-      <a href="/cv/" >CV</a>
-      
-      <a href="/news/" aria-current="page">News</a>
-      
+      <ul>
+        
+        <li><a href="/" data-ink="home" ><span class="sq" aria-hidden="true"></span>About</a></li>
+        
+        <li><a href="/publications/" data-ink="publications" ><span class="sq" aria-hidden="true"></span>Publications</a></li>
+        
+        <li><a href="/cv/" data-ink="cv" ><span class="sq" aria-hidden="true"></span>CV</a></li>
+        
+        <li><a href="/news/" data-ink="news" aria-current="page"><span class="sq" aria-hidden="true"></span>News</a></li>
+        
+      </ul>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" hidden><span class="theme-icon" aria-hidden="true">◐</span></button>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" hidden><svg class="icon icon-theme" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-theme"/></svg></button>
   </header>
-  <div class="site-grid">
-    <aside class="identity" aria-label="About Matteo">
-      <button class="portrait-button" type="button" aria-label="Enlarge portrait of Matteo Silvestri" data-portrait>
-        <img class="portrait" src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="208" height="248" fetchpriority="high">
-        <span class="portrait-caption">Enlarge portrait ↗</span>
-      </button>
-      <a class="identity-name" href="/">Matteo Silvestri<span class="accent">.</span></a>
-      <p class="identity-role">PhD student · AI researcher</p>
-      <p class="identity-affiliations"><a href="https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx">Sapienza University of Rome ↗</a><br><a href="https://www.embl.org/groups/petroni/">EMBL · Petroni Group ↗</a></p>
-      <p class="location"><span aria-hidden="true">↳</span> Rome, Italy</p>
-      <div class="social-links" aria-label="Contact and profiles">
-        <a href="mailto:m.silvestri@uniroma1.it">Email <span aria-hidden="true">↗</span></a><a href="https://github.com/msilver22">GitHub <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=M66vcc0AAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/matteo-silvestri-22-peedmat/">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://twitter.com/Silver22_2k">X <span aria-hidden="true">↗</span></a><a href="https://discord.com/users/1081636787220398261">Discord <span aria-hidden="true">↗</span></a><a href="https://hercolelab.netlify.app/"><img class="lab-logo" src="/assets/img/hercolelab_logo.png" alt="" width="15" height="15">HERCOLELab <span aria-hidden="true">↗</span></a>
-      </div>
-      <a class="identity-cv" href="/assets/pdf/cv.pdf">Download CV <span aria-hidden="true">↓</span></a>
-    </aside>
-    <main id="main" tabindex="-1">
-<header class="page-heading enter"><h1>News</h1></header>
-<section class="news-section reveal"><div class="section-heading"><h2>2026</h2><span class="eyebrow">5 updates</span></div><ol class="news-list"><li><a class="news-date" href="/news/announcement_12/"><time datetime="2026-09-24">24 Sep 2026</time></a><div class="news-body"><p>A long chapter closes: my first work as a PhD student, <a href="https://www.sciencedirect.com/science/article/pii/S2468696426000133">The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring</a>, is now published in <a href="https://www.sciencedirect.com/journal/online-social-networks-and-media">Online Social Networks and Media</a> (Elsevier)!</p></div></li><li><a class="news-date" href="/news/announcement_11/"><time datetime="2026-09-02">02 Sep 2026</time></a><div class="news-body"><p><strong>Small models, small compute footprint, no loss in explanation quality.</strong> That's the claim of our latest work <em>"Small Language Models as Resource-Aware Counterfactual Narrators: Knowledge Distillation and Self-Refinement for Green Local XAI"</em>, which we'll bring to the <a href="https://sites.google.com/uniroma1.it/green-ai-workshop/editions/ecml-pkdd-2026">GREEN-AI Workshop</a> at ECML-PKDD 2026 in Naples 🇮🇹</p></div></li><li><a class="news-date" href="/news/announcement_10/"><time datetime="2026-08-05">05 Aug 2026</time></a><div class="news-body"><p>Happy to share that our paper <a href="https://arxiv.org/pdf/2510.20351">When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets</a> has been accepted at <a href="https://colmweb.org/AcceptedPapers.html">COLM 2026</a>! 🇺🇸</p></div></li><li><a class="news-date" href="/news/announcement_9/"><time datetime="2026-04-01">01 Apr 2026</time></a><div class="news-body"><p>I started a <strong>Research Traineeship</strong> at the <a href="https://www.embl.org/groups/petroni/">European Molecular Biology Laboratory</a>, focusing on AI agents for scientific discovery! 🧪</p></div></li><li><a class="news-date" href="/news/announcement_8/"><time datetime="2026-03-26">26 Mar 2026</time></a><div class="news-body"><p>A new milestone! Our latest work <a href="https://arxiv.org/abs/2603.06485">PONTE: Personalized Orchestration for Natural
-Language Trustworthy Explanations</a> has been accepted at the <a href="https://xaiworldconference.com/2026/">4th XAI World Conference</a>! Brasil we're coming 🇧🇷</p></div></li></ol></section><section class="news-section reveal"><div class="section-heading"><h2>2025</h2><span class="eyebrow">6 updates</span></div><ol class="news-list"><li><a class="news-date" href="/news/announcement_6/"><time datetime="2025-11-15">15 Nov 2025</time></a><div class="news-body"><p>Happy to share that we receive the <a href="https://www.di.uniroma1.it/it/best-paper-award-la-ricerca-su-xai-narratives-con-llms-allhcai-workshop-acm-cikm-2025">Best Paper Award</a> at the <a href="https://xai.kaist.ac.kr/Workshop/hcai2025/">HCAI Workshop</a>!</p></div></li><li><a class="news-date" href="/news/announcement_7/"><time datetime="2025-11-11">11 Nov 2025</time></a><div class="news-body"><p>Curios about <strong>XAI Narratives</strong>? Take a look to our recent <a href="https://www.techrxiv.org/users/995230/articles/1356253-a-survey-on-explainable-ai-narratives-based-on-large-language-models">Survey</a>! We review state-of-the-art methods, and we design a comprehensive evaluation framework for this topic.</p></div></li><li><a class="news-date" href="/news/announcement_5/"><time datetime="2025-11-04">04 Nov 2025</time></a><div class="news-body"><p>Check out my first publication <a href="https://link.springer.com/article/10.1007/s10120-025-01679-7">Exploring the potential of artificial intelligence in assessing the risk of gastric neoplastic lesions in patients with corpus atrophic gastritis</a> to the <a href="https://link.springer.com/journal/10120">Gastric Cancer Journal</a>!</p></div></li><li><a class="news-date" href="/news/announcement_4/"><time datetime="2025-10-13">13 Oct 2025</time></a><div class="news-body"><p>My latest work <a href="https://arxiv.org/pdf/2510.03134">"Enhancing XAI Narratives through Multi-Narrative Refinement
-and Knowledge Distillation"</a> has been accepted to the CIKM 2025 workshop <a href="https://xai.kaist.ac.kr/Workshop/hcai2025/">Human-Centric AI:
-From Explainability and Trustworthiness to Actionable Ethics</a>! See you in Korea 🇰🇷</p></div></li><li><a class="news-date" href="/news/announcement_3/"><time datetime="2025-09-08">08 Sep 2025</time></a><div class="news-body"><p><strong>New Preprint</strong>! We present <a href="https://arxiv.org/abs/2502.00432v2">$\nabla$-CMH</a>, a method for community membership hiding in networks, ensuring privacy while preserving structural insights.</p></div></li><li><a class="news-date" href="/news/announcement_2/"><time datetime="2025-06-14">14 Jun 2025</time></a><div class="news-body"><p>The <strong>official website</strong> of <a href="https://hercolelab.netlify.app/">HERCOLE Lab</a> is now online. Explore our research and updates!</p></div></li></ol></section><section class="news-section reveal"><div class="section-heading"><h2>2024</h2><span class="eyebrow">1 updates</span></div><ol class="news-list"><li><a class="news-date" href="/news/announcement_1/"><time datetime="2024-11-01">01 Nov 2024</time></a><div class="news-body"><p>Starting a <strong>Ph.D. in Computer Science</strong> at <a href="https://www.uniroma1.it/it/">Sapienza University of Rome</a>!</p></div></li></ol></section>
-</main>
+  <main id="main" tabindex="-1">
+<header class="masthead">
+  <div class="wrap masthead-grid">
+    <h1 class="display"><span class="w"><span style="--i:0">News</span></span></h1>
+    <div class="masthead-links"><a class="link" href="/feed.xml">RSS <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></div>
   </div>
-  <footer class="footer"><span>© 2026 Matteo Silvestri</span><a href="/feed.xml">RSS ↗</a><a href="#top">Back to top ↑</a></footer>
-  <dialog class="portrait-dialog" aria-label="Portrait of Matteo Silvestri"><button type="button" data-close-portrait aria-label="Close portrait">Close ×</button><img src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="640" height="768"></dialog>
+</header>
+<div class="wrap">
+  
+  <section class="year-group">
+    <h2 class="year">2026<span class="year-count">5 updates</span></h2>
+    <ol class="rows news-list"><li class="row"><a class="row-key" href="/news/announcement_12/"><time datetime="2026-09-24">24 Sep 2026</time></a><div class="row-body prose"><p>A long chapter closes: my first work as a PhD student, <a href="https://www.sciencedirect.com/science/article/pii/S2468696426000133">The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring</a>, is now published in <a href="https://www.sciencedirect.com/journal/online-social-networks-and-media">Online Social Networks and Media</a> (Elsevier)!</p></div></li><li class="row"><a class="row-key" href="/news/announcement_11/"><time datetime="2026-09-02">02 Sep 2026</time></a><div class="row-body prose"><p><strong>Small models, small compute footprint, no loss in explanation quality.</strong> That's the claim of our latest work <em>"Small Language Models as Resource-Aware Counterfactual Narrators: Knowledge Distillation and Self-Refinement for Green Local XAI"</em>, which we'll bring to the <a href="https://sites.google.com/uniroma1.it/green-ai-workshop/editions/ecml-pkdd-2026">GREEN-AI Workshop</a> at ECML-PKDD 2026 in Naples 🇮🇹</p></div></li><li class="row"><a class="row-key" href="/news/announcement_10/"><time datetime="2026-08-05">05 Aug 2026</time></a><div class="row-body prose"><p>Happy to share that our paper <a href="https://arxiv.org/pdf/2510.20351">When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets</a> has been accepted at <a href="https://colmweb.org/AcceptedPapers.html">COLM 2026</a>! 🇺🇸</p></div></li><li class="row"><a class="row-key" href="/news/announcement_9/"><time datetime="2026-04-01">01 Apr 2026</time></a><div class="row-body prose"><p>I started a <strong>Research Traineeship</strong> at the <a href="https://www.embl.org/groups/petroni/">European Molecular Biology Laboratory</a>, focusing on AI agents for scientific discovery! 🧪</p></div></li><li class="row"><a class="row-key" href="/news/announcement_8/"><time datetime="2026-03-26">26 Mar 2026</time></a><div class="row-body prose"><p>A new milestone! Our latest work <a href="https://arxiv.org/abs/2603.06485">PONTE: Personalized Orchestration for Natural
+Language Trustworthy Explanations</a> has been accepted at the <a href="https://xaiworldconference.com/2026/">4th XAI World Conference</a>! Brasil we're coming 🇧🇷</p></div></li></ol>
+  </section>
+  
+  <section class="year-group">
+    <h2 class="year">2025<span class="year-count">6 updates</span></h2>
+    <ol class="rows news-list"><li class="row"><a class="row-key" href="/news/announcement_6/"><time datetime="2025-11-15">15 Nov 2025</time></a><div class="row-body prose"><p>Happy to share that we receive the <a href="https://www.di.uniroma1.it/it/best-paper-award-la-ricerca-su-xai-narratives-con-llms-allhcai-workshop-acm-cikm-2025">Best Paper Award</a> at the <a href="https://xai.kaist.ac.kr/Workshop/hcai2025/">HCAI Workshop</a>!</p></div></li><li class="row"><a class="row-key" href="/news/announcement_7/"><time datetime="2025-11-11">11 Nov 2025</time></a><div class="row-body prose"><p>Curios about <strong>XAI Narratives</strong>? Take a look to our recent <a href="https://www.techrxiv.org/users/995230/articles/1356253-a-survey-on-explainable-ai-narratives-based-on-large-language-models">Survey</a>! We review state-of-the-art methods, and we design a comprehensive evaluation framework for this topic.</p></div></li><li class="row"><a class="row-key" href="/news/announcement_5/"><time datetime="2025-11-04">04 Nov 2025</time></a><div class="row-body prose"><p>Check out my first publication <a href="https://link.springer.com/article/10.1007/s10120-025-01679-7">Exploring the potential of artificial intelligence in assessing the risk of gastric neoplastic lesions in patients with corpus atrophic gastritis</a> to the <a href="https://link.springer.com/journal/10120">Gastric Cancer Journal</a>!</p></div></li><li class="row"><a class="row-key" href="/news/announcement_4/"><time datetime="2025-10-13">13 Oct 2025</time></a><div class="row-body prose"><p>My latest work <a href="https://arxiv.org/pdf/2510.03134">"Enhancing XAI Narratives through Multi-Narrative Refinement
+and Knowledge Distillation"</a> has been accepted to the CIKM 2025 workshop <a href="https://xai.kaist.ac.kr/Workshop/hcai2025/">Human-Centric AI:
+From Explainability and Trustworthiness to Actionable Ethics</a>! See you in Korea 🇰🇷</p></div></li><li class="row"><a class="row-key" href="/news/announcement_3/"><time datetime="2025-09-08">08 Sep 2025</time></a><div class="row-body prose"><p><strong>New Preprint</strong>! We present <a href="https://arxiv.org/abs/2502.00432v2">$\nabla$-CMH</a>, a method for community membership hiding in networks, ensuring privacy while preserving structural insights.</p></div></li><li class="row"><a class="row-key" href="/news/announcement_2/"><time datetime="2025-06-14">14 Jun 2025</time></a><div class="row-body prose"><p>The <strong>official website</strong> of <a href="https://hercolelab.netlify.app/">HERCOLE Lab</a> is now online. Explore our research and updates!</p></div></li></ol>
+  </section>
+  
+  <section class="year-group">
+    <h2 class="year">2024<span class="year-count">1 update</span></h2>
+    <ol class="rows news-list"><li class="row"><a class="row-key" href="/news/announcement_1/"><time datetime="2024-11-01">01 Nov 2024</time></a><div class="row-body prose"><p>Starting a <strong>Ph.D. in Computer Science</strong> at <a href="https://www.uniroma1.it/it/">Sapienza University of Rome</a>!</p></div></li></ol>
+  </section>
+  
+</div>
+</main>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <a class="footer-email" href="mailto:m.silvestri@uniroma1.it">m.silvestri@uniroma1.it</a>
+      <ul class="footer-links" aria-label="Contact and profiles">
+        <li><a href="https://github.com/msilver22">GitHub <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://scholar.google.com/citations?user=M66vcc0AAAAJ">Google Scholar <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://www.linkedin.com/in/matteo-silvestri-22-peedmat/">LinkedIn <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://twitter.com/Silver22_2k">X <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://discord.com/users/1081636787220398261">Discord <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://hercolelab.netlify.app/">HERCOLELab <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li>
+        <li><a href="/assets/pdf/cv.pdf">Download CV <svg class="icon icon-down" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-down"/></svg></a></li>
+      </ul>
+      <div class="footer-meta">
+        <span>© 2026 Matteo Silvestri</span>
+        <a href="/feed.xml">RSS <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a>
+        <a href="#top">Back to top <svg class="icon icon-up" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page="cv">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>CV · Matteo Silvestri</title>
   <meta name="description" content="Matteo Silvestri — mathematics, language models, and AI agents. PhD student at Sapienza University of Rome and research trainee at EMBL.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f8f7f4">
+  <meta name="theme-color" content="#e9eef2">
   <meta property="og:title" content="Matteo Silvestri · CV">
   <meta property="og:description" content="Matteo Silvestri — mathematics, language models, and AI agents. PhD student at Sapienza University of Rome and research trainee at EMBL.">
   <meta property="og:image" content="https://msilver22.github.io/assets/img/prof_pic_new.jpg">
@@ -15,51 +15,97 @@
   <link rel="canonical" href="https://msilver22.github.io/cv/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Matteo Silvestri — News" href="/feed.xml">
+  <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <script src="/assets/js/theme.js"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <script defer src="/assets/js/site.js"></script>
   
 </head>
-<body id="top" class="">
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="reading-progress" aria-hidden="true"></div>
-  <header class="header">
-    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms<span class="wordmark-accent">22</span></a>
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="i-out" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 2.5v10M3.5 8.5 8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-up" viewBox="0 0 16 16"><path d="M8 13.5v-10M3.5 7.5 8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-left" viewBox="0 0 16 16"><path d="M13.5 8h-10M7.5 3.5 3 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-right" viewBox="0 0 16 16"><path d="M2.5 8h10M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 2.5v11M2.5 8h11" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 16 16"><path d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="2.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 16 16"><path d="M4.5 2.5 13 8l-8.5 5.5z" fill="currentColor"/></symbol>
+  </svg>
+  <header class="nav wrap">
+    <a class="wordmark" href="/" aria-label="Matteo Silvestri, home">ms22</a>
     <nav aria-label="Main navigation">
-      
-      <a href="/" >About</a>
-      
-      <a href="/publications/" >Publications</a>
-      
-      <a href="/cv/" aria-current="page">CV</a>
-      
-      <a href="/news/" >News</a>
-      
+      <ul>
+        
+        <li><a href="/" data-ink="home" ><span class="sq" aria-hidden="true"></span>About</a></li>
+        
+        <li><a href="/publications/" data-ink="publications" ><span class="sq" aria-hidden="true"></span>Publications</a></li>
+        
+        <li><a href="/cv/" data-ink="cv" aria-current="page"><span class="sq" aria-hidden="true"></span>CV</a></li>
+        
+        <li><a href="/news/" data-ink="news" ><span class="sq" aria-hidden="true"></span>News</a></li>
+        
+      </ul>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" hidden><span class="theme-icon" aria-hidden="true">◐</span></button>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" hidden><svg class="icon icon-theme" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-theme"/></svg></button>
   </header>
-  <div class="site-grid">
-    <aside class="identity" aria-label="About Matteo">
-      <button class="portrait-button" type="button" aria-label="Enlarge portrait of Matteo Silvestri" data-portrait>
-        <img class="portrait" src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="208" height="248" fetchpriority="high">
-        <span class="portrait-caption">Enlarge portrait ↗</span>
-      </button>
-      <a class="identity-name" href="/">Matteo Silvestri<span class="accent">.</span></a>
-      <p class="identity-role">PhD student · AI researcher</p>
-      <p class="identity-affiliations"><a href="https://phd.uniroma1.it/web/MATTEO-SILVESTRI_nP1872908_EN.aspx">Sapienza University of Rome ↗</a><br><a href="https://www.embl.org/groups/petroni/">EMBL · Petroni Group ↗</a></p>
-      <p class="location"><span aria-hidden="true">↳</span> Rome, Italy</p>
-      <div class="social-links" aria-label="Contact and profiles">
-        <a href="mailto:m.silvestri@uniroma1.it">Email <span aria-hidden="true">↗</span></a><a href="https://github.com/msilver22">GitHub <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=M66vcc0AAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/matteo-silvestri-22-peedmat/">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://twitter.com/Silver22_2k">X <span aria-hidden="true">↗</span></a><a href="https://discord.com/users/1081636787220398261">Discord <span aria-hidden="true">↗</span></a><a href="https://hercolelab.netlify.app/"><img class="lab-logo" src="/assets/img/hercolelab_logo.png" alt="" width="15" height="15">HERCOLELab <span aria-hidden="true">↗</span></a>
-      </div>
-      <a class="identity-cv" href="/assets/pdf/cv.pdf">Download CV <span aria-hidden="true">↓</span></a>
-    </aside>
-    <main id="main" tabindex="-1">
-<header class="page-heading enter"><h1>Curriculum vitae<span class="accent">.</span></h1><a class="button-link" href="/assets/pdf/cv.pdf">Download PDF <span aria-hidden="true">↓</span></a></header>
-<nav class="cv-nav" aria-label="CV sections"><a href="#general-information">General Information</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#awards">Awards</a></nav>
-<section class="cv-section reveal" id="general-information"><h2>General Information</h2><dl class="cv-info"><div><dt>Full Name</dt><dd>Matteo Silvestri</dd></div><div><dt>Place of Birth</dt><dd>Rome, Italy</dd></div><div><dt>Languages</dt><dd>Italian, English, Spanish</dd></div></dl></section><section class="cv-section reveal" id="experience"><h2>Experience</h2><div class="timeline"><article class="timeline-entry"><p class="timeline-date">2026 - present</p><div><h3>Research Traineeship</h3><p class="institution">European Molecular Biology Laboratory (EMBL), Rome, Italy — Petroni Group</p><ul><li><p>Working on AI agents for accelerating scientific discovery.</p></li></ul></div></article></div></section><section class="cv-section reveal" id="education"><h2>Education</h2><div class="timeline"><article class="timeline-entry"><p class="timeline-date">2024 - present</p><div><h3>Ph.D. in Computer Science</h3><p class="institution">Sapienza University of Rome, Italy</p><ul><li><p>XL Cycle.</p></li></ul></div></article><article class="timeline-entry"><p class="timeline-date">2022 - 2024</p><div><h3>M.Sc. in Applied Mathematics for Data Science</h3><p class="institution">Sapienza University of Rome, Italy</p><ul><li><p>Thesis - A Comprehensive Study of Deep Learning Techniques for Data Augmentation.</p></li></ul></div></article><article class="timeline-entry"><p class="timeline-date">2024</p><div><h3>Erasmus+ Scholarship</h3><p class="institution">Universitè Libre de Bruxelles, Belgium</p><ul><li><p>Specialized Master in Data Science, Big Data.</p></li></ul></div></article><article class="timeline-entry"><p class="timeline-date">2018 - 2022</p><div><h3>B.Sc. in Mathematics</h3><p class="institution">Sapienza University of Rome, Italy</p><ul><li><p>Thesis - Dido's Relative Isoperimetric Problem.</p></li></ul></div></article><article class="timeline-entry"><p class="timeline-date">2021</p><div><h3>Erasmus+ Scholarship</h3><p class="institution">Universidad Autonoma de Madrid, Spain</p><ul><li><p>Mathematics Department.</p></li></ul></div></article></div></section><section class="cv-section reveal" id="awards"><h2>Awards</h2><div class="timeline"><article class="timeline-entry"><p class="timeline-date">2025</p><div><h3>Best paper award at the HCAI Workshop - ACM CIKM</h3><p class="institution">Human-Centric AI Workshop, XAIC</p><ul><li><p>Awarded for the paper "Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation".</p></li></ul></div></article></div></section>
-</main>
+  <main id="main" tabindex="-1">
+<header class="masthead">
+  <div class="wrap masthead-grid">
+    <h1 class="display"><span class="w"><span style="--i:0">Curriculum</span></span> <span class="w"><span style="--i:1">vitae</span></span></h1>
+    <div class="masthead-links">
+      <a class="button" href="/assets/pdf/cv.pdf">Download PDF <svg class="icon icon-down" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-down"/></svg></a>
+    </div>
   </div>
-  <footer class="footer"><span>© 2026 Matteo Silvestri</span><a href="/feed.xml">RSS ↗</a><a href="#top">Back to top ↑</a></footer>
-  <dialog class="portrait-dialog" aria-label="Portrait of Matteo Silvestri"><button type="button" data-close-portrait aria-label="Close portrait">Close ×</button><img src="/assets/img/prof_pic_new.jpg" alt="Matteo Silvestri" width="640" height="768"></dialog>
+</header>
+<div class="wrap">
+  <nav class="cv-nav" aria-label="CV sections"><a class="link" href="#general-information">General Information</a><a class="link" href="#experience">Experience</a><a class="link" href="#education">Education</a><a class="link" href="#awards">Awards</a></nav>
+  
+  <section class="cv-section" id="general-information">
+    <h2>General Information</h2>
+    
+    <dl class="rows"><div class="row"><dt class="row-key">Full Name</dt><dd class="row-body">Matteo Silvestri</dd></div><div class="row"><dt class="row-key">Place of Birth</dt><dd class="row-body">Rome, Italy</dd></div><div class="row"><dt class="row-key">Languages</dt><dd class="row-body">Italian, English, Spanish</dd></div></dl>
+    
+  </section>
+  
+  <section class="cv-section" id="experience">
+    <h2>Experience</h2>
+    
+    <div class="rows"><article class="row"><p class="row-key">2026 - present</p><div class="row-body"><h3>Research Traineeship</h3><p class="institution">European Molecular Biology Laboratory (EMBL), Rome, Italy — Petroni Group</p><ul class="details"><li><p>Working on AI agents for accelerating scientific discovery.</p></li></ul></div></article></div>
+    
+  </section>
+  
+  <section class="cv-section" id="education">
+    <h2>Education</h2>
+    
+    <div class="rows"><article class="row"><p class="row-key">2024 - present</p><div class="row-body"><h3>Ph.D. in Computer Science</h3><p class="institution">Sapienza University of Rome, Italy</p><ul class="details"><li><p>XL Cycle.</p></li></ul></div></article><article class="row"><p class="row-key">2022 - 2024</p><div class="row-body"><h3>M.Sc. in Applied Mathematics for Data Science</h3><p class="institution">Sapienza University of Rome, Italy</p><ul class="details"><li><p>Thesis - A Comprehensive Study of Deep Learning Techniques for Data Augmentation.</p></li></ul></div></article><article class="row"><p class="row-key">2024</p><div class="row-body"><h3>Erasmus+ Scholarship</h3><p class="institution">Universitè Libre de Bruxelles, Belgium</p><ul class="details"><li><p>Specialized Master in Data Science, Big Data.</p></li></ul></div></article><article class="row"><p class="row-key">2018 - 2022</p><div class="row-body"><h3>B.Sc. in Mathematics</h3><p class="institution">Sapienza University of Rome, Italy</p><ul class="details"><li><p>Thesis - Dido's Relative Isoperimetric Problem.</p></li></ul></div></article><article class="row"><p class="row-key">2021</p><div class="row-body"><h3>Erasmus+ Scholarship</h3><p class="institution">Universidad Autonoma de Madrid, Spain</p><ul class="details"><li><p>Mathematics Department.</p></li></ul></div></article></div>
+    
+  </section>
+  
+  <section class="cv-section" id="awards">
+    <h2>Awards</h2>
+    
+    <div class="rows"><article class="row"><p class="row-key">2025</p><div class="row-body"><h3>Best paper award at the HCAI Workshop - ACM CIKM</h3><p class="institution">Human-Centric AI Workshop, XAIC</p><ul class="details"><li><p>Awarded for the paper "Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation".</p></li></ul></div></article></div>
+    
+  </section>
+  
+</div>
+</main>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <a class="footer-email" href="mailto:m.silvestri@uniroma1.it">m.silvestri@uniroma1.it</a>
+      <ul class="footer-links" aria-label="Contact and profiles">
+        <li><a href="https://github.com/msilver22">GitHub <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://scholar.google.com/citations?user=M66vcc0AAAAJ">Google Scholar <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://www.linkedin.com/in/matteo-silvestri-22-peedmat/">LinkedIn <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://twitter.com/Silver22_2k">X <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://discord.com/users/1081636787220398261">Discord <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li><li><a href="https://hercolelab.netlify.app/">HERCOLELab <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a></li>
+        <li><a href="/assets/pdf/cv.pdf">Download CV <svg class="icon icon-down" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-down"/></svg></a></li>
+      </ul>
+      <div class="footer-meta">
+        <span>© 2026 Matteo Silvestri</span>
+        <a href="/feed.xml">RSS <svg class="icon icon-out" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-out"/></svg></a>
+        <a href="#top">Back to top <svg class="icon icon-up" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
