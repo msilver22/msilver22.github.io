@@ -37,7 +37,7 @@ A mathematician by training (B.Sc. Mathematics, M.Sc. Applied Mathematics for Da
 
 ## Brand Commitments
 
-- Name: Matteo Silvestri. Header wordmark: `ms22`.
+- Name: Matteo Silvestri. Header wordmark: `ms`.
 - Voice: simple, factual labels and prose in the first person.
 - A polished result is wrong if it reads as an academic template (al-folio, department page), as cold and impersonal, or as a creative-agency showpiece where effects outrank the science (confirmed 2026-11-15).
 - Personal sites stay minimal (the author's stated preference).

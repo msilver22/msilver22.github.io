@@ -318,7 +318,7 @@ Controls are plain and exact: solid blocks and ruled lines that answer the point
 - **Focus:** a 2px outline in the current text colour, offset 3px, on every focusable element. The solid button draws its outline in ink (the masthead button in the field's text colour), because its own text colour would vanish against the ground.
 
 ### Navigation
-- **Style:** the `ms22` wordmark at the left (700, 1.375rem, expanded, the only bold weight in the system), four links at the right (500, 0.9375rem), then the theme toggle. Each link is led by a 0.625rem square in that page's figure ink.
+- **Style:** the `ms` wordmark at the left (700, 1.375rem, expanded, the only bold weight in the system), four links at the right (500, 0.9375rem), then the theme toggle. Each link is led by a 0.625rem square in that page's figure ink.
 - **States:** the current page carries a 2px ink underline; hover draws the same underline and turns the square 90 degrees. The theme toggle is a half-filled circle that rotates 180 degrees in the dark theme and scales to 0.94 on press; it appears only when the script runs.
 - **Mobile:** at 40rem and below the links move to a second row and spread across it.
 - **Between pages:** the bar is a named view-transition group and does not move.
