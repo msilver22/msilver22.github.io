@@ -1,2 +1,13 @@
 {% extends 'base.html' %}
-{% block content %}<section class="page-heading enter"><h1>Page not found</h1><p>This page may have moved, or the address may be incorrect.</p><a class="button-link" href="/">Back to the home page ↗</a></section>{% endblock %}
+{% from '_macros.html' import icon, rise %}
+{% block content %}
+<header class="masthead">
+  <div class="wrap masthead-grid">
+    <h1 class="display">{{ rise('Page not found') }}</h1>
+  </div>
+</header>
+<div class="wrap item">
+  <p class="item-body">This page may have moved, or the address may be incorrect.</p>
+  <a class="button" href="/">Back to the home page {{ icon('right') }}</a>
+</div>
+{% endblock %}

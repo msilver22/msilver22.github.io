@@ -1,0 +1,4 @@
+{% macro icon(name) -%}<svg class="icon icon-{{ name }}" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-{{ name }}"/></svg>{% endmacro %}
+{# Titles: keep hyphenated words whole and never strand a one-letter word at a line end. #}
+{% macro keep(text) -%}{% for word in text.split(' ') %}{% if '-' in word %}<span class="nb">{{ word }}</span>{% else %}{{ word }}{% endif %}{% if not loop.last %}{% if word|length == 1 %}&nbsp;{% else %} {% endif %}{% endif %}{% endfor %}{% endmacro %}
+{% macro rise(text) -%}{% for word in text.split(' ') %}<span class="w"><span style="--i:{{ loop.index0 }}">{{ word }}</span></span>{% if not loop.last %} {% endif %}{% endfor %}{% endmacro %}

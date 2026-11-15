@@ -1,0 +1,768 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T10:44:53Z",
+  "title": "Design System: Programma",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Dusk-Sky Paper",
+        "canonical": "#e9eef2",
+        "tonalRamp": [
+          "oklch(15% 0.003 242)",
+          "oklch(27% 0.006 242)",
+          "oklch(38% 0.007 242)",
+          "oklch(50% 0.008 242)",
+          "oklch(62% 0.008 242)",
+          "oklch(74% 0.006 242)",
+          "oklch(85% 0.004 242)",
+          "oklch(95% 0.002 242)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Blue-Black Ink",
+        "canonical": "#14171f",
+        "tonalRamp": [
+          "oklch(15% 0.007 269)",
+          "oklch(27% 0.012 269)",
+          "oklch(38% 0.016 269)",
+          "oklch(50% 0.017 269)",
+          "oklch(62% 0.017 269)",
+          "oklch(74% 0.013 269)",
+          "oklch(85% 0.008 269)",
+          "oklch(95% 0.004 269)"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#474e5c",
+        "tonalRamp": [
+          "oklch(15% 0.011 264)",
+          "oklch(27% 0.019 264)",
+          "oklch(38% 0.024 264)",
+          "oklch(50% 0.025 264)",
+          "oklch(62% 0.025 264)",
+          "oklch(74% 0.020 264)",
+          "oklch(85% 0.013 264)",
+          "oklch(95% 0.006 264)"
+        ]
+      },
+      "vino": {
+        "role": "primary",
+        "displayName": "Vino, Wine",
+        "canonical": "#7b1e34",
+        "tonalRamp": [
+          "oklch(15% 0.057 12)",
+          "oklch(27% 0.095 12)",
+          "oklch(38% 0.121 12)",
+          "oklch(50% 0.127 12)",
+          "oklch(62% 0.127 12)",
+          "oklch(74% 0.102 12)",
+          "oklch(85% 0.064 12)",
+          "oklch(95% 0.028 12)"
+        ]
+      },
+      "pino": {
+        "role": "primary",
+        "displayName": "Pino, Pine Green",
+        "canonical": "#1f7a4d",
+        "tonalRamp": [
+          "oklch(15% 0.050 157)",
+          "oklch(27% 0.083 157)",
+          "oklch(38% 0.105 157)",
+          "oklch(50% 0.110 157)",
+          "oklch(62% 0.110 157)",
+          "oklch(74% 0.088 157)",
+          "oklch(85% 0.055 157)",
+          "oklch(95% 0.024 157)"
+        ]
+      },
+      "cielo": {
+        "role": "primary",
+        "displayName": "Cielo, Cobalt",
+        "canonical": "#2447b8",
+        "tonalRamp": [
+          "oklch(15% 0.082 266)",
+          "oklch(27% 0.137 266)",
+          "oklch(38% 0.174 266)",
+          "oklch(50% 0.183 266)",
+          "oklch(62% 0.183 266)",
+          "oklch(74% 0.146 266)",
+          "oklch(85% 0.091 266)",
+          "oklch(95% 0.040 266)"
+        ]
+      },
+      "sole": {
+        "role": "primary",
+        "displayName": "Sole, Sun Yellow",
+        "canonical": "#f2c230",
+        "tonalRamp": [
+          "oklch(15% 0.071 89)",
+          "oklch(27% 0.119 89)",
+          "oklch(38% 0.151 89)",
+          "oklch(50% 0.158 89)",
+          "oklch(62% 0.158 89)",
+          "oklch(74% 0.127 89)",
+          "oklch(85% 0.079 89)",
+          "oklch(95% 0.035 89)"
+        ]
+      },
+      "on-field": {
+        "role": "neutral",
+        "displayName": "On-Field",
+        "canonical": "#f1f5f8",
+        "tonalRamp": [
+          "oklch(15% 0.003 240)",
+          "oklch(27% 0.004 240)",
+          "oklch(38% 0.006 240)",
+          "oklch(50% 0.006 240)",
+          "oklch(62% 0.006 240)",
+          "oklch(74% 0.005 240)",
+          "oklch(85% 0.003 240)",
+          "oklch(95% 0.001 240)"
+        ]
+      },
+      "field-ink": {
+        "role": "neutral",
+        "displayName": "Field Ink",
+        "canonical": "#14171f",
+        "tonalRamp": [
+          "oklch(15% 0.007 269)",
+          "oklch(27% 0.012 269)",
+          "oklch(38% 0.016 269)",
+          "oklch(50% 0.017 269)",
+          "oklch(62% 0.017 269)",
+          "oklch(74% 0.013 269)",
+          "oklch(85% 0.008 269)",
+          "oklch(95% 0.004 269)"
+        ]
+      },
+      "fig-vino": {
+        "role": "secondary",
+        "displayName": "Figure Vino",
+        "canonical": "#7b1e34",
+        "tonalRamp": [
+          "oklch(15% 0.057 12)",
+          "oklch(27% 0.095 12)",
+          "oklch(38% 0.121 12)",
+          "oklch(50% 0.127 12)",
+          "oklch(62% 0.127 12)",
+          "oklch(74% 0.102 12)",
+          "oklch(85% 0.064 12)",
+          "oklch(95% 0.028 12)"
+        ]
+      },
+      "fig-pino": {
+        "role": "secondary",
+        "displayName": "Figure Pino",
+        "canonical": "#1f7a4d",
+        "tonalRamp": [
+          "oklch(15% 0.050 157)",
+          "oklch(27% 0.083 157)",
+          "oklch(38% 0.105 157)",
+          "oklch(50% 0.110 157)",
+          "oklch(62% 0.110 157)",
+          "oklch(74% 0.088 157)",
+          "oklch(85% 0.055 157)",
+          "oklch(95% 0.024 157)"
+        ]
+      },
+      "fig-cielo": {
+        "role": "secondary",
+        "displayName": "Figure Cielo",
+        "canonical": "#2447b8",
+        "tonalRamp": [
+          "oklch(15% 0.082 266)",
+          "oklch(27% 0.137 266)",
+          "oklch(38% 0.174 266)",
+          "oklch(50% 0.183 266)",
+          "oklch(62% 0.183 266)",
+          "oklch(74% 0.146 266)",
+          "oklch(85% 0.091 266)",
+          "oklch(95% 0.040 266)"
+        ]
+      },
+      "fig-sole": {
+        "role": "secondary",
+        "displayName": "Figure Sole",
+        "canonical": "#f2c230",
+        "tonalRamp": [
+          "oklch(15% 0.071 89)",
+          "oklch(27% 0.119 89)",
+          "oklch(38% 0.151 89)",
+          "oklch(50% 0.158 89)",
+          "oklch(62% 0.158 89)",
+          "oklch(74% 0.127 89)",
+          "oklch(85% 0.079 89)",
+          "oklch(95% 0.035 89)"
+        ]
+      },
+      "m-vino": {
+        "role": "secondary",
+        "displayName": "Mark Vino",
+        "canonical": "#7b1e34",
+        "tonalRamp": [
+          "oklch(15% 0.057 12)",
+          "oklch(27% 0.095 12)",
+          "oklch(38% 0.121 12)",
+          "oklch(50% 0.127 12)",
+          "oklch(62% 0.127 12)",
+          "oklch(74% 0.102 12)",
+          "oklch(85% 0.064 12)",
+          "oklch(95% 0.028 12)"
+        ]
+      },
+      "m-pino": {
+        "role": "secondary",
+        "displayName": "Mark Pino, Deepened",
+        "canonical": "#1a6b43",
+        "tonalRamp": [
+          "oklch(15% 0.045 157)",
+          "oklch(27% 0.075 157)",
+          "oklch(38% 0.095 157)",
+          "oklch(50% 0.100 157)",
+          "oklch(62% 0.100 157)",
+          "oklch(74% 0.080 157)",
+          "oklch(85% 0.050 157)",
+          "oklch(95% 0.022 157)"
+        ]
+      },
+      "m-cielo": {
+        "role": "secondary",
+        "displayName": "Mark Cielo",
+        "canonical": "#2447b8",
+        "tonalRamp": [
+          "oklch(15% 0.082 266)",
+          "oklch(27% 0.137 266)",
+          "oklch(38% 0.174 266)",
+          "oklch(50% 0.183 266)",
+          "oklch(62% 0.183 266)",
+          "oklch(74% 0.146 266)",
+          "oklch(85% 0.091 266)",
+          "oklch(95% 0.040 266)"
+        ]
+      },
+      "m-sole": {
+        "role": "secondary",
+        "displayName": "Mark Sole, Ochre",
+        "canonical": "#a36f00",
+        "tonalRamp": [
+          "oklch(15% 0.055 76)",
+          "oklch(27% 0.091 76)",
+          "oklch(38% 0.116 76)",
+          "oklch(50% 0.122 76)",
+          "oklch(62% 0.122 76)",
+          "oklch(74% 0.098 76)",
+          "oklch(85% 0.061 76)",
+          "oklch(95% 0.027 76)"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Dusk-Sky Paper, Dark Theme",
+        "canonical": "#11141b",
+        "tonalRamp": [
+          "oklch(15% 0.007 267)",
+          "oklch(27% 0.011 267)",
+          "oklch(38% 0.014 267)",
+          "oklch(50% 0.015 267)",
+          "oklch(62% 0.015 267)",
+          "oklch(74% 0.012 267)",
+          "oklch(85% 0.008 267)",
+          "oklch(95% 0.003 267)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Blue-Black Ink, Dark Theme",
+        "canonical": "#e9eef2",
+        "tonalRamp": [
+          "oklch(15% 0.003 242)",
+          "oklch(27% 0.006 242)",
+          "oklch(38% 0.007 242)",
+          "oklch(50% 0.008 242)",
+          "oklch(62% 0.008 242)",
+          "oklch(74% 0.006 242)",
+          "oklch(85% 0.004 242)",
+          "oklch(95% 0.002 242)"
+        ]
+      },
+      "graphite-dark": {
+        "role": "neutral",
+        "displayName": "Graphite, Dark Theme",
+        "canonical": "#a4aebb",
+        "tonalRamp": [
+          "oklch(15% 0.010 255)",
+          "oklch(27% 0.016 255)",
+          "oklch(38% 0.021 255)",
+          "oklch(50% 0.022 255)",
+          "oklch(62% 0.022 255)",
+          "oklch(74% 0.017 255)",
+          "oklch(85% 0.011 255)",
+          "oklch(95% 0.005 255)"
+        ]
+      },
+      "fig-vino-dark": {
+        "role": "secondary",
+        "displayName": "Figure Vino, Dark Theme",
+        "canonical": "#dd6883",
+        "tonalRamp": [
+          "oklch(15% 0.067 7)",
+          "oklch(27% 0.111 7)",
+          "oklch(38% 0.141 7)",
+          "oklch(50% 0.148 7)",
+          "oklch(62% 0.148 7)",
+          "oklch(74% 0.118 7)",
+          "oklch(85% 0.074 7)",
+          "oklch(95% 0.033 7)"
+        ]
+      },
+      "fig-pino-dark": {
+        "role": "secondary",
+        "displayName": "Figure Pino, Dark Theme",
+        "canonical": "#41b07c",
+        "tonalRamp": [
+          "oklch(15% 0.057 160)",
+          "oklch(27% 0.096 160)",
+          "oklch(38% 0.121 160)",
+          "oklch(50% 0.128 160)",
+          "oklch(62% 0.128 160)",
+          "oklch(74% 0.102 160)",
+          "oklch(85% 0.064 160)",
+          "oklch(95% 0.028 160)"
+        ]
+      },
+      "fig-cielo-dark": {
+        "role": "secondary",
+        "displayName": "Figure Cielo, Dark Theme",
+        "canonical": "#7591ff",
+        "tonalRamp": [
+          "oklch(15% 0.074 271)",
+          "oklch(27% 0.123 271)",
+          "oklch(38% 0.156 271)",
+          "oklch(50% 0.165 271)",
+          "oklch(62% 0.165 271)",
+          "oklch(74% 0.132 271)",
+          "oklch(85% 0.082 271)",
+          "oklch(95% 0.036 271)"
+        ]
+      },
+      "m-vino-dark": {
+        "role": "secondary",
+        "displayName": "Mark Vino, Dark Theme",
+        "canonical": "#dd6883",
+        "tonalRamp": [
+          "oklch(15% 0.067 7)",
+          "oklch(27% 0.111 7)",
+          "oklch(38% 0.141 7)",
+          "oklch(50% 0.148 7)",
+          "oklch(62% 0.148 7)",
+          "oklch(74% 0.118 7)",
+          "oklch(85% 0.074 7)",
+          "oklch(95% 0.033 7)"
+        ]
+      },
+      "m-pino-dark": {
+        "role": "secondary",
+        "displayName": "Mark Pino, Dark Theme",
+        "canonical": "#41b07c",
+        "tonalRamp": [
+          "oklch(15% 0.057 160)",
+          "oklch(27% 0.096 160)",
+          "oklch(38% 0.121 160)",
+          "oklch(50% 0.128 160)",
+          "oklch(62% 0.128 160)",
+          "oklch(74% 0.102 160)",
+          "oklch(85% 0.064 160)",
+          "oklch(95% 0.028 160)"
+        ]
+      },
+      "m-cielo-dark": {
+        "role": "secondary",
+        "displayName": "Mark Cielo, Dark Theme",
+        "canonical": "#7591ff",
+        "tonalRamp": [
+          "oklch(15% 0.074 271)",
+          "oklch(27% 0.123 271)",
+          "oklch(38% 0.156 271)",
+          "oklch(50% 0.165 271)",
+          "oklch(62% 0.165 271)",
+          "oklch(74% 0.132 271)",
+          "oklch(85% 0.082 271)",
+          "oklch(95% 0.036 271)"
+        ]
+      },
+      "m-sole-dark": {
+        "role": "secondary",
+        "displayName": "Mark Sole, Dark Theme",
+        "canonical": "#f2c230",
+        "tonalRamp": [
+          "oklch(15% 0.071 89)",
+          "oklch(27% 0.119 89)",
+          "oklch(38% 0.151 89)",
+          "oklch(50% 0.158 89)",
+          "oklch(62% 0.158 89)",
+          "oklch(74% 0.127 89)",
+          "oklch(85% 0.079 89)",
+          "oklch(95% 0.035 89)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The page title, one per page, expanded width; rises word by word on load."
+      },
+      "display-masthead": {
+        "displayName": "Display, Masthead",
+        "purpose": "The page title inside a masthead field on publications, CV, news and not-found pages."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, year numerals and CV section headings, expanded width."
+      },
+      "title-band": {
+        "displayName": "Title, Band",
+        "purpose": "Paper title on a home publication band, expanded width."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Paper titles and CV entry titles, normal width."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The home bio, 35rem measure."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text in rows, abstracts and entries."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Venues, row keys, publication numbers, form labels and dates, condensed width with tabular figures."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Counts and the trace hint in graphite, condensed width."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "BibTeX in the citation box only."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Token --ease-out. Entrances and all hover, press and disclosure feedback."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Token --ease-in-out. The masthead view-transition group changing ink between pages."
+      },
+      {
+        "name": "word-rise",
+        "value": "translateY(112%) to 0, 720ms ease-out, delay calc(var(--i) * 45ms + 40ms), fill backwards",
+        "purpose": "The one entrance on every page: the display line rises word by word from a clip edge."
+      },
+      {
+        "name": "shore-draw",
+        "value": "scaleX(0) to 1, origin left, 1100ms ease-out, delay 150ms, fill backwards",
+        "purpose": "The full-width 2px shore drawing across the home page."
+      },
+      {
+        "name": "figure-dome-rise",
+        "value": "850ms, quartic ease-out, clipped at the shore",
+        "purpose": "The orchestrator dome rising from behind the shore (script, home)."
+      },
+      {
+        "name": "figure-node-arrival",
+        "value": "born 260ms to 830ms; scale spring from 0.82 (stiffness 260, damping 15); opacity 0 to 1 over 200ms",
+        "purpose": "Agents and tools arriving in the home figure."
+      },
+      {
+        "name": "figure-edge-draw",
+        "value": "520ms each, quartic ease-out, starting 520ms to 1140ms",
+        "purpose": "The twelve figure edges drawing from their source end."
+      },
+      {
+        "name": "figure-message-hop",
+        "value": "distance * 4.2ms clamped to 520ms-1700ms, quadratic ease-in-out",
+        "purpose": "A message dot travelling the visible part of an edge."
+      },
+      {
+        "name": "figure-think",
+        "value": "pause 280ms-480ms; scale bump; rotation spring (stiffness 150, damping 17) by 90deg for squares, 120deg for triangles",
+        "purpose": "A node receiving a message."
+      },
+      {
+        "name": "figure-task-cadence",
+        "value": "first task at 1450ms; next every 3200ms-4400ms; at most 2 overlapping; leads staggered 170ms",
+        "purpose": "Rhythm of the home simulation."
+      },
+      {
+        "name": "figure-drag-lift",
+        "value": "scale 1.07 while held",
+        "purpose": "A dragged agent; the dome moves along the shore only."
+      },
+      {
+        "name": "link-underline",
+        "value": "scaleX(0) to 1, origin left, 240ms ease-out",
+        "purpose": "Ink underline drawing under action links and nav links on hover; 300ms on the footer email."
+      },
+      {
+        "name": "prose-underline",
+        "value": "text-decoration-color 150ms ease",
+        "purpose": "Prose link underline turning from the mark colour to the text colour on hover."
+      },
+      {
+        "name": "icon-nudge",
+        "value": "translate 2px-3px in the arrow direction, 200ms ease-out",
+        "purpose": "Arrow icons on link hover."
+      },
+      {
+        "name": "square-turn",
+        "value": "rotate(90deg), 300ms ease-out",
+        "purpose": "The navigation square on hover."
+      },
+      {
+        "name": "button-ink",
+        "value": "background-color and color 160ms ease",
+        "purpose": "The button taking the page ink on hover."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) button, scale(0.94) theme toggle, scale(0.92) run toggle; 160ms ease-out",
+        "purpose": "Press feedback on controls."
+      },
+      {
+        "name": "theme-icon",
+        "value": "rotate(180deg), 300ms ease-out",
+        "purpose": "The theme toggle icon in the dark theme."
+      },
+      {
+        "name": "sheet-lift",
+        "value": "translateY(-0.75rem), 300ms ease-out",
+        "purpose": "The publication sheet rising when it or its title is hovered."
+      },
+      {
+        "name": "row-dim",
+        "value": "color 200ms ease",
+        "purpose": "Other news rows turning graphite while one is hovered."
+      },
+      {
+        "name": "disclosure",
+        "value": "block-size 0 to auto, 300ms ease-out; plus icon rotate(45deg) 200ms ease-out",
+        "purpose": "Abstract and citation panels opening in place."
+      },
+      {
+        "name": "view-transition-root",
+        "value": "240ms ease-out",
+        "purpose": "Page content swapping on same-origin navigation."
+      },
+      {
+        "name": "view-transition-masthead",
+        "value": "420ms ease-in-out",
+        "purpose": "The masthead group morphing from one page ink to the next; the nav group holds still."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation-duration 0.01ms, animation-delay 0s, transition-duration 0.01ms; @view-transition navigation: none; figure script exits",
+        "purpose": "Under prefers-reduced-motion: reduce, nothing moves and the still figure remains."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wrap-max",
+        "value": "100rem"
+      },
+      {
+        "name": "wide",
+        "value": "72rem"
+      },
+      {
+        "name": "medium",
+        "value": "56rem"
+      },
+      {
+        "name": "narrow",
+        "value": "40rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "The primary action on the ground: an ink block that takes the page ink on hover. One per view.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Publications <svg class=\"ds-btn-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2.5 8h10M8.5 3.5 13 8l-4.5 4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 0.65em; padding: 0.85rem 1.3rem; background: var(--ink); color: var(--paper); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 1.0625rem; line-height: 1.6; text-decoration: none; border: 0; border-radius: 0; cursor: pointer; transition: background-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-icon { flex: none; width: 0.8em; height: 0.8em; transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn:hover { background: var(--page); color: var(--on-page); } .ds-btn:hover .ds-btn-icon { transform: translateX(3px); } .ds-btn:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Field Button",
+      "kind": "button",
+      "refersTo": "button-on-field",
+      "description": "The button inside a wine, pine or cobalt masthead: on-field block with field-ink text, swapping the two on hover.",
+      "html": "<div class=\"ds-field\"><a class=\"ds-btn-field\" href=\"#\">Download PDF <svg class=\"ds-btn-field-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 2.5v10M3.5 8.5 8 13l4.5-4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a></div>",
+      "css": ".ds-field { padding: 1.5rem; background: var(--cielo); } .ds-btn-field { display: inline-flex; align-items: center; gap: 0.65em; padding: 0.85rem 1.3rem; background: var(--on-field); color: var(--field-ink); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 1.0625rem; line-height: 1.6; text-decoration: none; border-radius: 0; transition: background-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-field-icon { flex: none; width: 0.8em; height: 0.8em; transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-field:hover { background: var(--field-ink); color: var(--on-field); } .ds-btn-field:hover .ds-btn-field-icon { transform: translateY(2px); } .ds-btn-field:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Action Link",
+      "kind": "custom",
+      "refersTo": "link",
+      "description": "A 600-weight link with a resting 2px underline in the page mark colour and an ink underline that draws over it on hover.",
+      "html": "<a class=\"ds-link\" href=\"#\">All publications <svg class=\"ds-link-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2.5 8h10M8.5 3.5 13 8l-4.5 4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a>",
+      "css": ".ds-link { position: relative; display: inline-flex; align-items: center; gap: 0.45em; padding-block: 0.3rem; color: var(--ink); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 1.0625rem; line-height: 1.6; text-decoration: none; } .ds-link::before { content: ''; position: absolute; inset: auto 0 0; height: 2px; background: var(--m-page); } .ds-link::after { content: ''; position: absolute; inset: auto 0 0; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform 240ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-link-icon { flex: none; width: 0.8em; height: 0.8em; transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-link:hover::after { transform: scaleX(1); } .ds-link:hover .ds-link-icon { transform: translateX(3px); } .ds-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "The ms22 wordmark and four page links, each led by a square in that page figure ink; the current page is underlined in ink.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-wordmark\" href=\"#\">ms22</a><ul class=\"ds-nav-list\"><li><a class=\"ds-nav-link\" href=\"#\" aria-current=\"page\"><span class=\"ds-sq ds-sq-vino\"></span>About</a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-sq ds-sq-pino\"></span>Publications</a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-sq ds-sq-cielo\"></span>CV</a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-sq ds-sq-sole\"></span>News</a></li></ul></header>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 1.5rem; padding-block: 1.25rem; color: var(--ink); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; } .ds-wordmark { padding-block: 0.5rem; color: inherit; font-stretch: 125%; font-weight: 700; font-size: 1.375rem; letter-spacing: -0.02em; text-decoration: none; } .ds-nav-list { display: flex; gap: clamp(1rem, 2.6vw, 2.25rem); margin: 0 0 0 auto; padding: 0; list-style: none; } .ds-nav-link { position: relative; display: inline-flex; align-items: center; gap: 0.55rem; min-height: 2.75rem; color: inherit; font-weight: 500; font-size: 0.9375rem; text-decoration: none; } .ds-nav-link::after { content: ''; position: absolute; inset: auto 0 0.45rem; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform 240ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-nav-link[aria-current]::after, .ds-nav-link:hover::after { transform: scaleX(1); } .ds-sq { width: 0.625rem; height: 0.625rem; transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-sq-vino { background: var(--fig-vino); } .ds-sq-pino { background: var(--fig-pino); } .ds-sq-cielo { background: var(--fig-cielo); } .ds-sq-sole { background: var(--fig-sole); } .ds-nav-link:hover .ds-sq { transform: rotate(90deg); } .ds-nav-link:focus-visible, .ds-wordmark:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
+    },
+    {
+      "name": "Masthead",
+      "kind": "custom",
+      "refersTo": "masthead-publications",
+      "description": "The full-width field in the page ink that opens every page except home: display title bottom-left, links bottom-right.",
+      "html": "<header class=\"ds-masthead\"><h1 class=\"ds-masthead-title\">Publications</h1><div class=\"ds-masthead-links\"><a class=\"ds-masthead-link\" href=\"#\">Google Scholar <svg class=\"ds-masthead-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12 12 4M5.5 4H12v6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a><a class=\"ds-masthead-link\" href=\"#\">Bibliography <svg class=\"ds-masthead-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 2.5v10M3.5 8.5 8 13l4.5-4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a></div></header>",
+      "css": ".ds-masthead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem 3rem; padding: clamp(3rem, 8vw, 6.5rem) var(--gutter) clamp(1.75rem, 3vw, 2.5rem); background: var(--pino); color: var(--on-field); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; } .ds-masthead-title { margin: 0; font-stretch: 125%; font-weight: 600; font-size: clamp(2.75rem, 7.4vw, 6rem); line-height: 0.98; letter-spacing: -0.035em; } .ds-masthead-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.75rem; padding-bottom: 0.4rem; } .ds-masthead-link { position: relative; display: inline-flex; align-items: center; gap: 0.45em; padding-block: 0.3rem; color: inherit; font-weight: 600; font-size: 1.0625rem; line-height: 1.6; text-decoration: none; } .ds-masthead-link::after { content: ''; position: absolute; inset: auto 0 0; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform 240ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-masthead-link:hover::after { transform: scaleX(1); } .ds-masthead-icon { flex: none; width: 0.8em; height: 0.8em; } .ds-masthead-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
+    },
+    {
+      "name": "Register Rows",
+      "kind": "custom",
+      "refersTo": "row",
+      "description": "Every list on the site: a 2px ink rule opens the block, then rows of a 9.5rem key column and a body, divided by 1px ink rules.",
+      "html": "<div class=\"ds-rows\"><article class=\"ds-row\"><p class=\"ds-row-key\">2026 - present</p><div class=\"ds-row-body\"><h3 class=\"ds-row-title\">Research Traineeship</h3><p class=\"ds-row-note\">European Molecular Biology Laboratory (EMBL), Rome, Italy — Petroni Group</p></div></article><article class=\"ds-row\"><p class=\"ds-row-key\">2024 - present</p><div class=\"ds-row-body\"><h3 class=\"ds-row-title\">Ph.D. in Computer Science</h3><p class=\"ds-row-note\">Sapienza University of Rome, Italy</p></div></article></div>",
+      "css": ".ds-rows { border-top: 2px solid var(--ink); color: var(--ink); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; } .ds-row { display: grid; grid-template-columns: var(--col) minmax(0, 1fr); column-gap: 2rem; padding-block: 1.4rem; border-bottom: 1px solid var(--ink); } .ds-row-key { margin: 0; font-stretch: 80%; font-weight: 600; font-size: 0.9375rem; line-height: 1.7; font-variant-numeric: tabular-nums; } .ds-row-body { max-width: 44rem; } .ds-row-title { margin: 0; font-weight: 600; font-size: 1.3125rem; line-height: 1.25; letter-spacing: -0.012em; } .ds-row-note { margin: 0.2rem 0 0; color: var(--graphite); }"
+    },
+    {
+      "name": "Publication Entry",
+      "kind": "custom",
+      "refersTo": "paper-number",
+      "description": "A numbered publication: bracketed number in a 3.25rem margin column, venue label, title, all authors with Matteo Silvestri in ink, journal in italics, action links.",
+      "html": "<article class=\"ds-paper\"><p class=\"ds-paper-number\">8</p><div class=\"ds-paper-body\"><p class=\"ds-paper-venue\">OSNEM</p><h3 class=\"ds-paper-title\"><a href=\"#\">The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring</a></h3><p class=\"ds-paper-authors\"><strong>Matteo Silvestri</strong>, Edoardo Gabrielli, Fabrizio Silvestri, Gabriele Tolomei</p><p class=\"ds-paper-journal\">Online Social Networks and Media · 55</p><div class=\"ds-paper-actions\"><a class=\"ds-paper-link\" href=\"#\">Paper <svg class=\"ds-paper-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12 12 4M5.5 4H12v6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a><a class=\"ds-paper-link\" href=\"#\">Code <svg class=\"ds-paper-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12 12 4M5.5 4H12v6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a></div></div></article>",
+      "css": ".ds-paper { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); padding-block: 1.75rem; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); color: var(--ink); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; } .ds-paper-number { justify-self: start; align-self: start; margin: 0; padding-inline: 0.2rem; font-stretch: 80%; font-weight: 600; font-size: 0.9375rem; line-height: 1.3; font-variant-numeric: tabular-nums; } .ds-paper-number::before { content: '['; } .ds-paper-number::after { content: ']'; } .ds-paper-body { max-width: 50rem; } .ds-paper-venue { margin: 0; font-stretch: 80%; font-weight: 600; font-size: 0.9375rem; line-height: 1.3; } .ds-paper-title { margin: 0.45rem 0 0; font-weight: 600; font-size: 1.3125rem; line-height: 1.25; letter-spacing: -0.012em; } .ds-paper-title a { color: inherit; text-decoration: none; } .ds-paper-title a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.18em; text-decoration-color: var(--m-page); } .ds-paper-authors { margin: 0.6rem 0 0; color: var(--graphite); } .ds-paper-authors strong { color: var(--ink); font-weight: 600; } .ds-paper-journal { margin: 0.2rem 0 0; font-style: italic; color: var(--graphite); } .ds-paper-actions { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; margin-top: 0.9rem; } .ds-paper-link { position: relative; display: inline-flex; align-items: center; gap: 0.45em; padding-block: 0.3rem; color: inherit; font-weight: 600; text-decoration: none; } .ds-paper-link::before { content: ''; position: absolute; inset: auto 0 0; height: 2px; background: var(--m-page); } .ds-paper-link::after { content: ''; position: absolute; inset: auto 0 0; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform 240ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-paper-link:hover::after { transform: scaleX(1); } .ds-paper-icon { flex: none; width: 0.8em; height: 0.8em; } .ds-paper-link:focus-visible, .ds-paper-title a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
+    },
+    {
+      "name": "Search Field and Year Select",
+      "kind": "input",
+      "refersTo": "field-input",
+      "description": "The publications filter: a paper-coloured box with a 2px ink border and square corners, a condensed label above and a graphite count below.",
+      "html": "<div class=\"ds-tools\"><label class=\"ds-tools-label\" for=\"ds-search\">Find a paper</label><div class=\"ds-tools-row\"><input class=\"ds-input\" id=\"ds-search\" type=\"search\" placeholder=\"Title, author, topic…\" autocomplete=\"off\"><span class=\"ds-select\"><select aria-label=\"Publication year\"><option>All years</option><option>2026</option><option>2025</option></select></span></div><p class=\"ds-tools-count\">8 publications</p></div>",
+      "css": ".ds-tools { color: var(--ink); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.0625rem; } .ds-tools-label { display: block; margin-bottom: 0.5rem; font-stretch: 80%; font-weight: 600; font-size: 0.9375rem; } .ds-tools-row { display: flex; gap: 0.75rem; } .ds-input, .ds-select select { min-height: 3.25rem; background: var(--paper); color: inherit; font: inherit; border: 2px solid var(--ink); border-radius: 0; } .ds-input { flex: 1; min-width: 0; padding: 0 1rem; } .ds-input::placeholder { color: var(--graphite); opacity: 1; } .ds-input:focus-visible, .ds-select select:focus-visible { outline: 2px solid var(--m-page); outline-offset: 2px; } .ds-select { position: relative; display: inline-flex; } .ds-select select { appearance: none; -webkit-appearance: none; padding: 0 2.75rem 0 1rem; cursor: pointer; } .ds-select::after { content: ''; position: absolute; right: 1.1rem; top: 50%; width: 0.5rem; height: 0.5rem; border-right: 2px solid; border-bottom: 2px solid; transform: translateY(-70%) rotate(45deg); pointer-events: none; } .ds-tools-count { margin: 0.6rem 0 0; font-stretch: 80%; font-weight: 500; font-size: 0.875rem; color: var(--graphite); font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Publication Band",
+      "kind": "card",
+      "refersTo": "band-cielo",
+      "description": "A selected publication on the home page: a full-width pine or cobalt field with the venue, the title and links at the left and the paper preview as a flat sheet that overlaps the bottom edge.",
+      "html": "<article class=\"ds-band\"><div class=\"ds-band-text\"><p class=\"ds-band-venue\">COLM '26</p><h3 class=\"ds-band-title\"><a href=\"#\">When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets</a></h3><div class=\"ds-band-actions\"><a class=\"ds-band-link\" href=\"#\">Paper <svg class=\"ds-band-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12 12 4M5.5 4H12v6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a><a class=\"ds-band-link\" href=\"#\">Code <svg class=\"ds-band-icon\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12 12 4M5.5 4H12v6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a></div></div><a class=\"ds-sheet\" href=\"#\" tabindex=\"-1\" aria-hidden=\"true\"></a></article>",
+      "css": ".ds-band { display: grid; grid-template-columns: minmax(0, 1fr) min(34rem, 42%); column-gap: clamp(2rem, 5vw, 5rem); align-items: start; overflow: clip; padding: clamp(2.5rem, 5vw, 4rem) var(--gutter) 0; background: var(--cielo); color: var(--on-field); font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; } .ds-band-text { display: flex; flex-direction: column; align-self: stretch; padding-bottom: clamp(2.5rem, 5vw, 4rem); } .ds-band-venue { margin: 0; font-stretch: 80%; font-weight: 600; font-size: 0.9375rem; line-height: 1.3; } .ds-band-title { margin: 0.9rem 0 0; max-width: 17em; font-stretch: 125%; font-weight: 600; font-size: clamp(1.5rem, 2.7vw, 2.375rem); line-height: 1.08; letter-spacing: -0.028em; } .ds-band-title a { color: inherit; text-decoration: none; } .ds-band-title a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.16em; } .ds-band-actions { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin-top: auto; padding-top: 2rem; } .ds-band-link { position: relative; display: inline-flex; align-items: center; gap: 0.45em; padding-block: 0.3rem; color: inherit; font-weight: 600; text-decoration: none; } .ds-band-link::after { content: ''; position: absolute; inset: auto 0 0; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform 240ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-band-link:hover::after { transform: scaleX(1); } .ds-band-icon { flex: none; width: 0.8em; height: 0.8em; } .ds-sheet { display: block; aspect-ratio: 6 / 5; margin-bottom: -5.5rem; background: #fff; transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-sheet:hover, .ds-band:has(.ds-band-title a:hover) .ds-sheet { transform: translateY(-0.75rem); } .ds-band-link:focus-visible, .ds-band-title a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Programma",
+    "overview": "Programma treats one researcher's website as an Italian modernist identity programme. The surface is pale dusk-sky paper and blue-black ink, and four flat poster inks do all the colour work: wine, pine, cobalt and sun. Each page owns one of them. The home page is wine, publications pine, the CV cobalt, news sun, and that ink fills the page's masthead, its footer and its hover states. One typeface, Archivo, speaks in three widths: expanded for display, normal for reading, condensed for labels.\n\nEverything is flat. Corners are square, structure is drawn with ink rules, and depth comes only from one flat plane overlapping another. The home page carries the programme's one figure: a multi-agent system built from a dome, a square, a circle and a triangle, standing on a full-width ink line called the shore. The figure is a live simulation that the visitor can rearrange and extend; without JavaScript, or with reduced motion, it stays as a still drawing. Lists on every page sit on one fixed column register, so dates, years and keys line up from page to page.\n\nThe system serves two readers equally: researchers who want the papers, and people evaluating a profile who want the trajectory and the CV. It is wrong, even when polished, if it reads as an academic template, as cold and impersonal, or as a creative-agency showpiece where effects outrank the science. The words are not part of the design: every heading, label and sentence comes from the content files, and the design changes presentation only.",
+    "keyCharacteristics": [
+      "Two grounds (paper, ink) and four flat field inks; no gradients, no shadows, no translucent colour at rest.",
+      "One ink per page, set by the page key and carried by masthead, footer, hovers and underline marks.",
+      "One typeface in three widths: expanded 125%, normal 100%, condensed 80%.",
+      "Square corners; 2px ink rules open a block, 1px ink rules divide its rows.",
+      "One fixed column register for every list; publications numbered in a margin column.",
+      "One entrance per page, feedback on controls, nothing revealed on scroll."
+    ],
+    "rules": [
+      {
+        "name": "The One Entrance Rule",
+        "body": "A page gets one entrance, and it is the display line rising word by word. The home page adds the shore and the figure to that same moment; no other element animates in.",
+        "section": "overview"
+      },
+      {
+        "name": "The Nothing On Scroll Rule",
+        "body": "Nothing fades, slides or reveals as the visitor scrolls. Content below the first screen is already there when they reach it.",
+        "section": "overview"
+      },
+      {
+        "name": "The Locked Palette Rule",
+        "body": "The palette is two grounds, graphite and four field inks, with the figure and mark variants listed above. No new hue, tint, shade or opacity step is added; a new need is met with an existing ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Ink Per Page Rule",
+        "body": "A page shows its own ink in the masthead, the footer, hovers and underline marks. The other three inks appear on it only as the navigation squares, the home figure and the two home publication bands.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fields Carry Their Own Text Rule",
+        "body": "Text on wine, pine and cobalt is on-field; text on sun is field ink. Fields and their text do not change between light and dark themes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Marks Are Not Text Rule",
+        "body": "Mark colours and figure inks draw lines and fill shapes. They are never used as a text colour; text is ink, graphite, or a field's own text colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Widths Rule",
+        "body": "Hierarchy is made with width and size inside one family: expanded for display and headings, normal for text and titles, condensed for labels. No second typeface is introduced; the monospace stack exists only for BibTeX.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every number that sits in a column or changes in place uses tabular figures: row keys, years, publication numbers, counts, dates and the trace readout.",
+        "section": "typography"
+      },
+      {
+        "name": "The Labels Are Data Rule",
+        "body": "The label voice carries facts from the content files: a venue, a date, a count, a form label. It is sentence case, never uppercased or letter-spaced, and never used for a slogan above a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Register Rule",
+        "body": "A new list uses the existing key column and gap. It does not introduce its own column widths, and its keys line up with the keys of every other list on the site.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Planes Rule",
+        "body": "A surface is one solid colour with a hard edge. If something needs to feel in front, it overlaps; it never casts a shadow, blurs what is behind it, or fades into it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Two Rule Weights Rule",
+        "body": "2px opens a block or draws a structural line; 1px separates rows inside it. Rules are solid ink (or the current text colour on a field), never grey and never dashed.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do take every colour from the tokens: paper, ink, graphite, the four fields, their text colours, and the figure and mark variants.",
+      "Do give a new page one of the four inks through its page key, and let masthead, footer, hovers and marks follow from it.",
+      "Do set text on wine, pine and cobalt in on-field (`#f1f5f8`) and text on sun in field ink (`#14171f`), in both themes.",
+      "Do build hierarchy from Archivo's three widths: 125% for display and headings, 100% for text, 80% for labels.",
+      "Do place every list on the register: a 9.5rem key column (7.5rem at 56rem and below, stacked at 40rem and below) and a 2rem gap.",
+      "Do open a block with a 2px ink rule and divide its rows with 1px ink rules.",
+      "Do use tabular figures for dates, years, numbers and counts.",
+      "Do keep the page readable with no script: search, filters, the theme toggle, copy buttons and the live figure are enhancements that appear only when the script runs.",
+      "Do honour reduced motion: collapse durations, switch off view transitions, leave the figure still.",
+      "Do take every word and number from the content files. The home headline is the author's sentence and the home news heading is \"News\"."
+    ],
+    "donts": [
+      "Don't add a colour, tint or opacity step to the palette, and don't use a gradient or a translucent wash anywhere.",
+      "Don't use a box shadow, text shadow, blur or glow. Depth is overlap only.",
+      "Don't use a mark colour or a figure ink as a text colour.",
+      "Don't round a corner on a control, field, image or panel.",
+      "Don't introduce a second typeface, uppercase labels or added letter-spacing.",
+      "Don't give a list its own column widths; it sits on the register.",
+      "Don't fade, slide or reveal content on scroll, and don't add a second entrance to a page.",
+      "Don't write slogans, topic cards, kickers above headings, invented biography or research summaries. Text is binding; a design change alters presentation only.",
+      "Don't let it read as an academic template, as cold and impersonal, or as a creative-agency showpiece where effects outrank the science."
+    ]
+  }
+}

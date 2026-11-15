@@ -16,6 +16,8 @@ Markdown, PyYAML, and bibtexparser to build static HTML for GitHub Pages.
   All authors render; Matteo's name is emphasized. Keep full citations available.
 - Edit `templates/`, `assets/css/site.css`, and `assets/js/` for presentation.
   Do not edit generated `dist/` files or reintroduce al-folio/Jekyll dependencies.
+- Follow `DESIGN.md` for the visual system (locked palette, one typeface, no
+  shadows or gradients, one ink per page) and `PRODUCT.md` for product context.
 - Support keyboard navigation, narrow screens, dark mode, reduced motion, and
   readable content without JavaScript. Use real content; don't invent biography.
 - GitHub Actions builds on pushes and PRs; only main/manual builds publish to

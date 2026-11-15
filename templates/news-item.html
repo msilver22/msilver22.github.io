@@ -1,2 +1,16 @@
 {% extends 'base.html' %}
-{% block content %}<article class="page-heading enter"><a class="text-link" href="/news/">← All news</a><p class="eyebrow"><time datetime="{{ item.date.isoformat() }}">{{ item.date.strftime('%d %B %Y') }}</time></p><h1>News</h1><div class="bio">{{ item.html }}</div></article>{% endblock %}
+{% from '_macros.html' import icon, rise %}
+{% block content %}
+<article>
+  <header class="masthead">
+    <div class="wrap masthead-grid">
+      <h1 class="display">{{ rise('News') }}</h1>
+      <p class="masthead-date"><time datetime="{{ item.date.isoformat() }}">{{ item.date.strftime('%d %B %Y') }}</time></p>
+    </div>
+  </header>
+  <div class="wrap item">
+    <div class="item-body prose">{{ item.html }}</div>
+    <a class="link" href="/news/">{{ icon('left') }} All news</a>
+  </div>
+</article>
+{% endblock %}

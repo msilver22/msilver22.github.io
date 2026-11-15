@@ -73,6 +73,10 @@ class WebsiteTest(unittest.TestCase):
     def test_math_delimiters_survive_markdown(self):
         self.assertIn(r'$\nabla$-CMH', md(r'Our [$\nabla$-CMH](https://example.org) method.'))
 
+    def test_page_titles(self):
+        self.assertIn('<title>%s</title>' % self.content['site']['name'], (OUT / 'index.html').read_text())
+        self.assertIn('<title>Publications · ', (OUT / 'publications/index.html').read_text())
+
     def test_no_template_dependencies_in_output(self):
         for file in OUT.rglob('*.html'):
             self.assertNotRegex(file.read_text(), r'\{%|\{\{|bootstrap|jquery|mdb\.min')

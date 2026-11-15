@@ -33,13 +33,14 @@ preview on port 8080.
 | Downloadable CV | `assets/pdf/cv.pdf` |
 | Page layouts | `templates/*.html` |
 | Design and interactions | `assets/css/site.css`, `assets/js/` |
+| Typeface | `assets/fonts/` |
 
 News keeps the existing `/news/announcement_N/` routes. Publications are grouped
 by year and ordered by month, with abstracts, resource links, and BibTeX. Search,
-filters, theme selection, portrait zoom, and scroll effects progressively enhance
+filters, theme selection, and the homepage figure progressively enhance
 the HTML. Content, links, and native disclosure controls work without JavaScript.
 Motion respects the operating system's reduced-motion preference. MathJax is
-loaded from jsDelivr only when a page contains TeX; other assets are local.
+loaded from jsDelivr only when a page contains TeX; other assets, fonts included, are local.
 
 ## Build and verify
 
@@ -64,15 +65,29 @@ available as the `website` workflow artifact. No hosting migration is required.
 The previous site used al-folio. Its MIT license is retained in `LICENSE`.
 Original site content and assets are preserved in this custom implementation.
 
-## Homepage design
+## Design
+
+The visual system is recorded in `DESIGN.md` and the product context in
+`PRODUCT.md`. In short: a locked palette of two grounds and four flat inks
+(wine, pine, cobalt, sun), one typeface (Archivo, self-hosted from
+`assets/fonts/`, SIL Open Font License) in three widths, square corners, ink
+rules, and no gradients or shadows. Each page owns one ink: home wine,
+publications pine, CV cobalt, news sun.
+
+## Homepage
 
 `site.yml` lists the two `featured_publications` by BibTeX ID. Only entries still
 present in the bibliography render. Their preview images live in
 `assets/img/publications/<BibTeX-ID>.png` and combine crops of the title and
 abstract from the original PDFs, omitting intervening figures. Keep the source PDF links in the bibliography.
-The SVG in `templates/graphics/agent-flow.svg` is a decorative illustration of
-agent execution. It respects system reduced motion and pauses when off-screen or when the tab
-is hidden. No AI service is called by the illustration.
+
+The figure beside the headline is a small multi-agent system: an orchestrator on
+the baseline, agents that pass messages to each other, and tools. The static
+drawing is `templates/graphics/agents.svg`; `assets/js/agents.js` brings it to
+life. Visitors can drag any agent and click empty space to add up to three of
+their own. It is a decorative simulation: no AI service is called. It pauses
+when off-screen or when the tab is hidden, has a pause button, and stays static
+without JavaScript or when the system asks for reduced motion.
 
 To regenerate the paper previews, install the optional `PyMuPDF` package and run
 `python scripts/render_publication_previews.py`. PDF versions and crop coordinates

@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
+{% from '_macros.html' import icon, rise %}
 {% block content %}
-<header class="page-heading enter"><h1>News</h1></header>
-{% for group in news|groupby('date.year')|reverse %}<section class="news-section reveal"><div class="section-heading"><h2>{{ group.grouper }}</h2><span class="eyebrow">{{ group.list|length }} updates</span></div>{% with entries=group.list %}{% include 'news-list.html' %}{% endwith %}</section>{% endfor %}
+<header class="masthead">
+  <div class="wrap masthead-grid">
+    <h1 class="display">{{ rise('News') }}</h1>
+    <div class="masthead-links"><a class="link" href="/feed.xml">RSS {{ icon('out') }}</a></div>
+  </div>
+</header>
+<div class="wrap">
+  {% for group in news|groupby('date.year')|reverse %}
+  <section class="year-group">
+    <h2 class="year">{{ group.grouper }}<span class="year-count">{{ group.list|length }} update{% if group.list|length != 1 %}s{% endif %}</span></h2>
+    {% with entries=group.list %}{% include 'news-list.html' %}{% endwith %}
+  </section>
+  {% endfor %}
+</div>
 {% endblock %}
