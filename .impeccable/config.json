@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "templates/base.html"
+        ],
+        "createdAt": "2026-11-15T18:30:59.579Z",
+        "reason": "agent: static analysis reads #000 on the dark ground; computed-style audit in a browser found no text below AA in either theme on all page types, and the independent finish review confirmed dark --ink is #e9eef2"
+      }
+    ]
+  }
+}
