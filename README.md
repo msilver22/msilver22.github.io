@@ -81,10 +81,13 @@ present in the bibliography render. Their preview images live in
 `assets/img/publications/<BibTeX-ID>.png` and combine crops of the title and
 abstract from the original PDFs, omitting intervening figures. Keep the source PDF links in the bibliography.
 
-The figure beside the headline is a small multi-agent system: an orchestrator on
-the baseline, agents that pass messages to each other, and tools. The static
+The figure beside the headline is a multi-agent architecture with no text in it.
+Robots are the agents: an orchestrator on the baseline, three leads and two
+smaller robots. The other shapes are what they use: a router, shared memory, a
+store, documents, tools, and a task queue and an exit on the baseline. The static
 drawing is `templates/graphics/agents.svg`; `assets/js/agents.js` brings it to
-life. Visitors can drag any agent and click empty space to add up to three of
+life (messages travel between robots, which look at each other and blink).
+Visitors can drag any shape and press empty space to add up to three robots of
 their own. It is a decorative simulation: no AI service is called. It pauses
 when off-screen or when the tab is hidden, has a pause button, and stays static
 without JavaScript or when the system asks for reduced motion.

@@ -47,7 +47,7 @@
 
   --gutter: clamp(1.25rem, 4.45vw, 4rem);
   --col: 9.5rem;
-  --fig: clamp(20rem, 31vw, 30rem);
+  --fig: clamp(20rem, 33vw, 32rem);
   --section: clamp(4.5rem, 9vw, 7.5rem);
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
@@ -199,7 +199,7 @@ h3 { font-weight: 600; font-size: 1.3125rem; line-height: 1.25; letter-spacing: 
 .hero { position: relative; overflow-x: clip; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) var(--fig); align-items: end; padding-top: clamp(1.5rem, 5vh, 3.25rem); }
 .hero .display { grid-area: 1 / 1 / 2 / -1; align-self: start; max-width: 9.75em; padding-bottom: clamp(3.5rem, 6.2vw, 6rem); }
-.agents { grid-area: 1 / 2; width: var(--fig); aspect-ratio: 12 / 11; }
+.agents { grid-area: 1 / 2; width: var(--fig); aspect-ratio: 13 / 11; }
 .agents-svg { width: 100%; height: 100%; overflow: visible; user-select: none; -webkit-user-select: none; }
 .agents-svg .edges line { stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
 .ink-vino { fill: var(--fig-vino); }
@@ -207,7 +207,10 @@ h3 { font-weight: 600; font-size: 1.3125rem; line-height: 1.25; letter-spacing: 
 .ink-cielo { fill: var(--fig-cielo); }
 .ink-sole { fill: var(--fig-sole); }
 .ink-ink { fill: var(--ink); }
-.agents-svg .tool { fill: var(--paper); stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.agents-svg .eye { fill: var(--paper); }
+.agents-svg .eye-dark { fill: var(--field-ink); }
+.agents-svg .wire { fill: none; stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.agents-svg .outline { fill: var(--paper); stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
 .agents-svg .hit, .agents-svg .grip { fill: transparent; stroke: none; pointer-events: all; }
 .agents[data-live] .hit { cursor: copy; }
 .agents[data-live] .node { cursor: grab; touch-action: none; }
@@ -360,7 +363,7 @@ a.row-key { align-self: start; }
   :root { --col: 7.5rem; }
   .hero-grid { grid-template-columns: minmax(0, 1fr); }
   .hero .display { grid-area: auto; padding-bottom: 2rem; }
-  .agents { grid-area: auto; width: min(100%, 30rem); margin-inline: auto; }
+  .agents { grid-area: auto; width: min(100%, 32rem); margin-inline: auto; }
   .run { position: static; width: auto; padding-top: 0.125rem; }
   .about { grid-template-columns: 9rem minmax(0, 1fr); row-gap: 2.5rem; padding-top: 2rem; }
   .run-hint { padding-bottom: 0.25rem; }
